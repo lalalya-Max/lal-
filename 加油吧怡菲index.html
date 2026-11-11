@@ -1,0 +1,4286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="加油吧怡菲">
+  <meta name="theme-color" content="#fdf8f8">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <link rel="icon" href="data:image/png;base64,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">
+  <title>加油吧怡菲</title>
+  <style>
+/* ===== CSS Variables - 特别淡的浅粉色 ===== */
+:root {
+  --primary: #d4a5a5;
+  --primary-dark: #c08080;
+  --primary-light: #faf0f0;
+  --bg: #fdf8f8;
+  --card-bg: #ffffff;
+  --text: #5a4a4a;
+  --text-secondary: #a08888;
+  --border: #f0e0e0;
+  --success: #a0c8a0;
+  --success-light: #eef6ee;
+  --warning: #e8c87a;
+  --warning-light: #fdf6e3;
+  --danger: #d08880;
+  --danger-light: #faeae6;
+  --info: #88a8b8;
+  --info-light: #eaf2f5;
+  --purple: #b0a0b8;
+  --purple-light: #f0eaf2;
+  --yellow: #e8d070;
+  --yellow-light: #fdf6e0;
+  --green: #a0c0a0;
+  --green-light: #eef5ee;
+  --orange: #e0a878;
+  --orange-light: #faf0e8;
+  --blue: #98b8c8;
+  --blue-light: #eaf2f6;
+  --radius: 16px;
+  --radius-sm: 12px;
+  --radius-xs: 8px;
+  --sidebar-w: 260px;
+  --shadow: 0 2px 8px rgba(200, 160, 160, 0.06);
+  --shadow-md: 0 6px 20px rgba(200, 160, 160, 0.10);
+  --shadow-cute: 0 4px 14px rgba(200, 160, 160, 0.08);
+}
+
+/* ===== Reset ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  font-family: "PingFang SC", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.7;
+  background-image:
+    radial-gradient(circle, rgba(200,100,130,0.3) 8px, transparent 8px),
+    radial-gradient(circle at 20% 80%, rgba(230, 200, 200, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(210, 180, 180, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(240, 220, 220, 0.05) 0%, transparent 70%);
+  background-size: 60px 60px, auto, auto, auto;
+}
+
+/* ===== Layout ===== */
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: var(--sidebar-w);
+  background: linear-gradient(180deg, #fdf5f5 0%, #faf0f0 100%);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+  transition: transform 0.3s;
+  border-right: 2px solid var(--border);
+}
+
+.sidebar-header {
+  padding: 24px 16px 16px;
+  text-align: center;
+  border-bottom: 2px dashed var(--border);
+}
+.sidebar-header .logo-girl {
+  font-size: 40px;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+.sidebar-header h1 {
+  font-size: 20px;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+.sidebar-header .subtitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+.nav {
+  flex: 1;
+  padding: 12px 10px;
+}
+.nav-group {
+  margin-top: 16px;
+}
+.nav-group-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary);
+  padding: 4px 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+.nav-item:hover {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  transform: translateX(2px);
+}
+.nav-item.active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: var(--shadow-cute);
+}
+
+.sidebar-footer {
+  padding: 12px 10px;
+  border-top: 2px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ===== Main ===== */
+.main {
+  flex: 1;
+  margin-left: var(--sidebar-w);
+  padding: 24px;
+  max-width: 1200px;
+}
+
+/* ===== Sections ===== */
+.section {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+.section.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+.date-display {
+  color: var(--text-secondary);
+  font-size: 14px;
+  background: var(--primary-light);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* ===== Tags ===== */
+.tag {
+  display: inline-block;
+  padding: 2px 12px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+.card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.card-header h3 {
+  margin-bottom: 0;
+}
+
+/* Card color themes */
+.card-pink { border-color: #e8d4d4; background: linear-gradient(135deg, #fff 0%, #fdf8f8 100%); }
+.card-blue { border-color: #d0dde4; background: linear-gradient(135deg, #fff 0%, #f7fbfc 100%); }
+.card-green { border-color: #d4e0d0; background: linear-gradient(135deg, #fff 0%, #f6fbf4 100%); }
+.card-yellow { border-color: #e8dca0; background: linear-gradient(135deg, #fff 0%, #fefdf3 100%); }
+.card-purple { border-color: #d8d0de; background: linear-gradient(135deg, #fff 0%, #faf9fc 100%); }
+.card-orange { border-color: #e0d0c0; background: linear-gradient(135deg, #fff 0%, #fdf8f3 100%); }
+
+/* ===== Forms ===== */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-field-wide {
+  grid-column: 1 / -1;
+}
+.form-field label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 9px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xs);
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #fffdfa;
+  color: var(--text);
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+.form-field textarea {
+  resize: vertical;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.btn-cute-primary {
+  background: linear-gradient(135deg, #d4a5a5 0%, #c08080 100%);
+  color: #fff;
+  box-shadow: var(--shadow-cute);
+}
+.btn-cute-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(192, 128, 128, 0.15);
+}
+.btn-cute {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+.btn-cute:hover {
+  background: #ffc4dd;
+}
+.btn-danger-cute {
+  background: #ffe0e8;
+  color: var(--danger);
+}
+.btn-danger-cute:hover {
+  background: #ffcfd9;
+}
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* ===== Greeting Bar ===== */
+.greeting-bar {
+  background: linear-gradient(135deg, #fdf5f5 0%, #faf0f0 50%, #f5f0f2 100%);
+  border-radius: var(--radius);
+  padding: 18px 24px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1.5px solid var(--border);
+  flex-wrap: wrap;
+}
+.greeting-bar .greeting-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+.greeting-bar .greeting-sub {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  font-style: italic;
+}
+.greeting-bar .greeting-emoji {
+  font-size: 36px;
+}
+
+/* ===== Today Bar ===== */
+.today-bar {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.today-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.today-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.weather-info {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.weather-info .weather-temp {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+/* Todo list */
+.todo-input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.todo-input {
+  flex: 1;
+  padding: 7px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xs);
+  font-size: 13px;
+  background: #fffdfa;
+  color: var(--text);
+}
+.todo-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: var(--radius-xs);
+  font-size: 13px;
+  background: #fdf8f8;
+}
+.todo-item.done .todo-text {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+.todo-checkbox {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.todo-text {
+  flex: 1;
+}
+.todo-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 0 4px;
+}
+.todo-delete:hover {
+  color: var(--danger);
+}
+
+/* ===== File Input & Photo Preview ===== */
+.file-input {
+  padding: 8px;
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-xs);
+  font-size: 13px;
+  background: #fdf8f8;
+  cursor: pointer;
+  width: 100%;
+}
+.photo-preview {
+  margin-top: 8px;
+}
+.photo-preview img {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: var(--radius-xs);
+  border: 1.5px solid var(--border);
+  object-fit: cover;
+}
+
+/* ===== Gallery Container ===== */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+}
+.gallery-item {
+  background: #fdf8f8;
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  border: 1.5px solid var(--border);
+  transition: transform 0.15s;
+}
+.gallery-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.gallery-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius-xs);
+  margin-bottom: 8px;
+}
+.gallery-item .gallery-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.gallery-item .gallery-info {
+  font-size: 13px;
+  margin-top: 4px;
+}
+.gallery-item .gallery-notes {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* ===== Advice Container ===== */
+.advice-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.advice-item {
+  background: #f5fbf4;
+  border-radius: var(--radius-xs);
+  padding: 12px 14px;
+  border-left: 3px solid var(--green);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.advice-item strong {
+  color: var(--primary-dark);
+}
+
+/* ===== Countdown ===== */
+.countdown-container {
+  text-align: center;
+  padding: 8px 0;
+}
+.countdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.countdown-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.countdown-date {
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: var(--primary-light);
+  padding: 2px 12px;
+  border-radius: 12px;
+}
+.countdown-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.countdown-number {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 12px 20px;
+  min-width: 70px;
+  text-align: center;
+}
+.countdown-number .num {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+.countdown-number .label {
+  font-size: 12px;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+/* ===== Tips ===== */
+.tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.tip-item {
+  display: flex;
+  gap: 10px;
+  background: #fdf8f8;
+  border-radius: var(--radius-xs);
+  padding: 12px;
+  border: 1.5px solid var(--border);
+}
+.tip-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.tip-content {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ===== News ===== */
+.news-source-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.news-tab {
+  padding: 6px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  background: #fffdfa;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+.news-tab:hover {
+  border-color: var(--primary);
+  color: var(--primary-dark);
+}
+.news-tab.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.news-item {
+  background: #fdf8f8;
+  border-radius: var(--radius-xs);
+  padding: 12px 14px;
+  border-left: 3px solid var(--primary);
+  transition: transform 0.15s;
+}
+.news-item:hover {
+  transform: translateX(2px);
+}
+.news-item .news-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.news-item .news-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.news-item .news-title a:hover {
+  color: var(--primary-dark);
+}
+.news-item .news-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.news-item .news-meta {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+/* ===== Backup Actions ===== */
+.backup-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ===== Stats Grid ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.stat-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  border: 1.5px solid var(--border);
+  transition: transform 0.15s;
+}
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.stat-card .stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+.stat-card .stat-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+.stat-card.success .stat-value { color: #4caf87; }
+.stat-card.warning .stat-value { color: #e8a050; }
+.stat-card.danger .stat-value { color: var(--danger); }
+.stat-card.info .stat-value { color: #5ba3d0; }
+
+/* ===== Dashboard Grid ===== */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+/* ===== Stats Container ===== */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.stat-item {
+  background: #fefcf5;
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  text-align: center;
+  border: 1.5px solid var(--border);
+}
+.stat-item .stat-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+.stat-item .stat-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* ===== Tables ===== */
+.table-container {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #fff8fa;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+tr:hover td {
+  background: #fefcf2;
+}
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+.action-btn:hover {
+  background: var(--primary-light);
+}
+
+/* ===== Badges ===== */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.badge-bsp { background: var(--info-light); color: #4a90c0; }
+.badge-multimedia { background: var(--purple-light); color: #7c5fa8; }
+.badge-algorithm { background: var(--green-light); color: #4caf87; }
+.badge-embedded { background: var(--info-light); color: #4a90c0; }
+.badge-api { background: var(--yellow-light); color: #c8a030; }
+
+.badge-unscheduled { background: var(--yellow-light); color: #c8a030; }
+.badge-keyword { background: #fff3d0; color: #d49000; font-weight: 600; }
+.badge-scheduled { background: var(--info-light); color: #5a90b0; }
+.badge-completed { background: var(--green-light); color: #4caf87; }
+
+.badge-pending { background: var(--yellow-light); color: #c8a030; }
+.badge-passed, .badge-matched { background: var(--green-light); color: #4caf87; }
+.badge-failed, .badge-rejected { background: var(--danger-light); color: var(--danger); }
+.badge-cancelled { background: #f5f5f5; color: var(--text-secondary); }
+
+/* ===== Filters ===== */
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.filter-select {
+  padding: 6px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xs);
+  font-size: 13px;
+  background: #fffdfa;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* ===== Timeline ===== */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.timeline-item {
+  background: #fefcf5;
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  border-left: 4px solid var(--primary);
+  transition: transform 0.15s;
+}
+.timeline-item:hover {
+  transform: translateX(2px);
+}
+.timeline-item .timeline-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+.timeline-item .timeline-content {
+  font-size: 14px;
+}
+.timeline-item .timeline-content strong {
+  color: var(--primary-dark);
+}
+
+/* ===== Charts ===== */
+.chart-container {
+  min-height: 120px;
+  padding: 8px 0;
+}
+
+/* CSS Bar Chart */
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bar-label {
+  min-width: 80px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-align: right;
+  flex-shrink: 0;
+}
+.bar-track {
+  flex: 1;
+  height: 26px;
+  background: #f5f0e3;
+  border-radius: 13px;
+  overflow: hidden;
+  position: relative;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  transition: width 0.4s ease;
+  min-width: 28px;
+}
+
+/* Canvas charts */
+canvas {
+  max-width: 100%;
+}
+
+/* ===== Water Controls ===== */
+.water-controls {
+  margin-bottom: 12px;
+}
+.water-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.water-btn {
+  padding: 8px 16px;
+  border: 1.5px solid var(--blue);
+  border-radius: 20px;
+  background: var(--blue-light);
+  color: #4a7d96;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.water-btn:hover {
+  background: var(--blue);
+  color: #fff;
+}
+.water-btn.water-reset {
+  border-color: var(--text-secondary);
+  background: #f0f2f5;
+  color: var(--text-secondary);
+}
+.water-btn.water-reset:hover {
+  background: var(--text-secondary);
+  color: #fff;
+}
+
+/* ===== Water Progress ===== */
+.water-progress-container {
+  padding: 10px 0;
+}
+.water-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.water-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.water-bottle {
+  font-size: 28px;
+}
+.water-bar-track {
+  flex: 1;
+  height: 30px;
+  background: #e8f4ff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.water-bar-fill {
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #87ceeb 0%, #5ba8d5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  transition: width 0.5s ease;
+  min-width: 30px;
+}
+.water-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* ===== List Container ===== */
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #fefcf5;
+  border-radius: var(--radius-xs);
+  font-size: 13px;
+}
+.list-item .list-item-date {
+  color: var(--text-secondary);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.list-item .list-item-title {
+  font-weight: 500;
+}
+.list-item .list-item-desc {
+  color: var(--text-secondary);
+}
+.empty-state {
+  text-align: center;
+  padding: 28px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* ===== Modal ===== */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(200, 180, 140, 0.2);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 24px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-md);
+}
+.modal-content h3 {
+  margin-bottom: 12px;
+  color: var(--primary-dark);
+}
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xs);
+  font-family: monospace;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+/* ===== Toast ===== */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #d4a5a5 0%, #c08080 100%);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 2000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  .main {
+    margin-left: 0;
+    padding: 16px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-header h2 {
+    font-size: 20px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .today-bar {
+    grid-template-columns: 1fr;
+  }
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 101;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+}
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+}
+
+</style>
+</head>
+<body>
+  <div class="app">
+    <!-- 侧边栏 -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-girl">👧</div>
+        <h1>啦啦的小世界</h1>
+        <p class="subtitle">今日事今日毕</p>
+      </div>
+      <nav class="nav">
+        <a href="#overview" class="nav-item active" data-section="overview">🏠 小主页</a>
+        <div class="nav-group">
+          <div class="nav-group-title">📚 学习</div>
+          <a href="#thesis" class="nav-item" data-section="thesis">📖 论文进度</a>
+          <a href="#civil" class="nav-item" data-section="civil">📝 考公打卡</a>
+          <a href="#english" class="nav-item" data-section="english">🔤 英语学习</a>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">💼 工作</div>
+          <a href="#campus" class="nav-item" data-section="campus">🎓 校招</a>
+          <a href="#intern" class="nav-item" data-section="intern">🧸 实习生</a>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">🌈 生活</div>
+          <a href="#body" class="nav-item" data-section="body">⚖️ 身体管理</a>
+          <a href="#fitness" class="nav-item" data-section="fitness">🏃 运动打卡</a>
+          <a href="#diet" class="nav-item" data-section="diet">🥗 饮食记录</a>
+          <a href="#mood" class="nav-item" data-section="mood">💝 今日心情</a>
+          <a href="#sleep" class="nav-item" data-section="sleep">😴 睡眠记录</a>
+          <a href="#outfit" class="nav-item" data-section="outfit">👗 服饰搭配</a>
+          <a href="#finance" class="nav-item" data-section="finance">💰 收支管理</a>
+          <a href="#social" class="nav-item" data-section="social">🧺 人际管理</a>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">🛡️ 安全</div>
+          <a href="#backup" class="nav-item" data-section="backup">💾 数据备份</a>
+        </div>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="exportBtn" class="btn btn-sm btn-cute">📤 导出数据</button>
+        <button id="importBtn" class="btn btn-sm btn-cute">📥 导入数据</button>
+        <button id="clearBtn" class="btn btn-sm btn-danger-cute">🗑️ 清空数据</button>
+      </div>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="main">
+      <!-- 小主页 -->
+      <section id="overview" class="section active">
+        <div class="greeting-bar" id="greetingBar"></div>
+        <!-- 今日信息栏 -->
+        <div class="today-bar">
+          <div class="today-card" id="todayWeatherCard">
+            <div class="today-card-title">🌤️ 今日天气</div>
+            <div id="weatherContent">加载中...</div>
+          </div>
+          <div class="today-card today-todo-card">
+            <div class="today-card-title">📋 今日待办</div>
+            <div class="todo-input-row">
+              <input type="text" id="todoInput" placeholder="添加待办事项..." class="todo-input">
+              <button id="todoAddBtn" class="btn btn-cute-primary btn-sm">+</button>
+            </div>
+            <div id="todoList" class="todo-list"></div>
+          </div>
+        </div>
+        <div class="section-header">
+          <h2>🏠 小主页</h2>
+          <span class="date-display" id="todayDate"></span>
+        </div>
+        <div class="stats-grid" id="overviewStats"></div>
+        <div class="dashboard-grid">
+          <div class="card card-pink">
+            <h3>📖 近7天文献阅读</h3>
+            <div id="readingChart" class="chart-container"></div>
+          </div>
+          <div class="card card-blue">
+            <h3>📝 考公本周打卡</h3>
+            <div id="civilWeekChart" class="chart-container"></div>
+          </div>
+          <div class="card card-green">
+            <h3>⚖️ 体重趋势</h3>
+            <div id="weightChart" class="chart-container"></div>
+          </div>
+          <div class="card card-yellow">
+            <h3>🏃 近7天运动</h3>
+            <div id="fitnessWeekChart" class="chart-container"></div>
+          </div>
+          <div class="card card-purple">
+            <h3>💧 近7天饮水量</h3>
+            <div id="waterWeekChart" class="chart-container"></div>
+          </div>
+          <div class="card card-pink">
+            <h3>😴 近7天睡眠</h3>
+            <div id="sleepWeekChart" class="chart-container"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 论文进度 -->
+      <section id="thesis" class="section">
+        <div class="section-header">
+          <h2>📖 论文进度 <span class="tag">农业农村社会学</span></h2>
+        </div>
+        <div class="card card-pink">
+          <h3>➕ 记录今日学习</h3>
+          <form id="thesisForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>📚 文献阅读量（篇）</label>
+              <input type="number" name="readingCount" min="0" value="0">
+            </div>
+            <div class="form-field form-field-wide">
+              <label>✏️ 文献笔记</label>
+              <textarea name="readingNotes" rows="3" placeholder="今天读了什么？关键观点..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💡 想法与灵感</label>
+              <textarea name="ideas" rows="3" placeholder="今天有什么新想法？"></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>🔗 文献链接</label>
+              <input type="url" name="paperUrl" placeholder="https://... 论文链接">
+            </div>
+            <div class="form-field form-field-wide">
+              <label>📝 论文进度</label>
+              <input type="text" name="progress" placeholder="如：第一章初稿进行中">
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-pink">
+          <h3>📊 学习统计</h3>
+          <div id="thesisStats" class="stats-container"></div>
+        </div>
+        <div class="card card-pink">
+          <h3>📖 学习记录</h3>
+          <div id="thesisList" class="timeline-container"></div>
+        </div>
+      </section>
+
+      <!-- 考公打卡 -->
+      <section id="civil" class="section">
+        <div class="section-header">
+          <h2>📝 考公打卡</h2>
+        </div>
+
+        <!-- 国考倒计时 -->
+        <div class="card card-blue">
+          <div class="countdown-container" id="countdownContainer">
+            <div class="countdown-header">
+              <h3>🎯 28届国考倒计时</h3>
+              <span class="countdown-date">预计 2027年11月底</span>
+            </div>
+            <div class="countdown-numbers" id="countdownNumbers"></div>
+          </div>
+        </div>
+
+        <!-- 考公注意事项 -->
+        <div class="card card-blue">
+          <h3>📌 28届考公注意事项</h3>
+          <div class="tips-container">
+            <div class="tip-item">
+              <div class="tip-icon">⏰</div>
+              <div class="tip-content"><strong>时间规划</strong>：现在研一/研二，距离考试还有约1年，建议每天保持2-3小时学习，循序渐进。</div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-icon">📖</div>
+              <div class="tip-content"><strong>行测优先</strong>：言语理解和资料分析提分最快，先攻克；数量关系和判断推理需要长期积累。</div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-icon">✍️</div>
+              <div class="tip-content"><strong>申论积累</strong>：坚持每天读人民日报评论版，积累规范表达和热点素材。</div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-icon">🌍</div>
+              <div class="tip-content"><strong>时政跟进</strong>：关注每月时政热点，下方时政要闻可每天碎片化阅读。</div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-icon">📊</div>
+              <div class="tip-content"><strong>刷题节奏</strong>：前期模块刷题，中期套题模拟，后期全真模拟控制时间。</div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-icon">🧘</div>
+              <div class="tip-content"><strong>心态调整</strong>：考公是持久战，不要焦虑进度，保持规律学习和充足睡眠。</div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-icon">📋</div>
+              <div class="tip-content"><strong>报考策略</strong>：关注岗位表，结合自身专业、地域偏好合理选岗，不要盲目报热门。</div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-icon">🎓</div>
+              <div class="tip-content"><strong>平衡学业</strong>：研究生论文和考公并行，合理分配精力，避免顾此失彼。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 每日时政要闻 -->
+        <div class="card card-blue">
+          <div class="card-header">
+            <h3>📰 每日时政要闻</h3>
+            <button id="refreshNewsBtn" class="btn btn-cute btn-sm">🔄 刷新</button>
+          </div>
+          <div class="news-source-tabs" id="newsSourceTabs">
+            <button class="news-tab" data-source="people">人民日报</button>
+            <button class="news-tab active" data-source="xinhua">新华社</button>
+            <button class="news-tab" data-source="xinhuaWorld">新华国际</button>
+          </div>
+          <div id="newsList" class="news-container">
+            <div class="empty-state">点击刷新获取最新时政要闻...</div>
+          </div>
+        </div>
+
+        <div class="card card-blue">
+          <h3>➕ 记录今日学习</h3>
+          <form id="civilForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>📚 行测板块</label>
+              <select name="section">
+                <option value="言语理解">📖 言语理解</option>
+                <option value="数量关系">🔢 数量关系</option>
+                <option value="判断推理">🧩 判断推理</option>
+                <option value="资料分析">📊 资料分析</option>
+                <option value="常识判断">🌍 常识判断</option>
+                <option value="申论">✍️ 申论</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>📝 学习内容</label>
+              <input type="text" name="content" placeholder="如：排列组合-错排问题">
+            </div>
+            <div class="form-field">
+              <label>✏️ 做题数量</label>
+              <input type="number" name="questionCount" min="0" value="0">
+            </div>
+            <div class="form-field">
+              <label>✅ 正确数量</label>
+              <input type="number" name="correctCount" min="0" value="0">
+            </div>
+            <div class="form-field">
+              <label>⏰ 做题时长（分钟）</label>
+              <input type="number" name="duration" min="0" value="0">
+            </div>
+            <div class="form-field">
+              <label>📺 听课时长（分钟）</label>
+              <input type="number" name="studyDuration" min="0" value="0">
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 备注</label>
+              <textarea name="notes" rows="2" placeholder="错题分析、薄弱点..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-blue">
+          <h3>📊 各板块统计</h3>
+          <div id="civilSectionStats" class="stats-container"></div>
+        </div>
+        <div class="card card-blue">
+          <h3>📊 正确率趋势</h3>
+          <div id="civilAccuracyChart" class="chart-container"></div>
+        </div>
+        <div class="card card-blue">
+          <h3>📖 考公记录</h3>
+          <div id="civilList" class="timeline-container"></div>
+        </div>
+      </section>
+
+      <!-- 英语学习 -->
+      <section id="english" class="section">
+        <div class="section-header">
+          <h2>🔤 英语学习 <span class="tag">单词为主</span></h2>
+        </div>
+        <div class="card card-blue">
+          <h3>➕ 记录今日单词学习</h3>
+          <form id="englishForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>📚 学习单词数</label>
+              <input type="number" name="wordCount" min="0" value="0">
+            </div>
+            <div class="form-field">
+              <label>✅ 已掌握单词数</label>
+              <input type="number" name="masteredCount" min="0" value="0">
+            </div>
+            <div class="form-field">
+              <label>📊 掌握程度</label>
+              <select name="masteryLevel">
+                <option value="1">⭐ 认识</option>
+                <option value="2">⭐⭐ 能用</option>
+                <option value="3">⭐⭐⭐ 熟练</option>
+                <option value="4">⭐⭐⭐⭐ 精通</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>📌 重点标记</label>
+              <select name="isKey">
+                <option value="false">普通</option>
+                <option value="true">⭐ 重点单词</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>⏰ 学习时长（分钟）</label>
+              <input type="number" name="duration" min="0" value="0">
+            </div>
+            <div class="form-field form-field-wide">
+              <label>📝 今日单词列表</label>
+              <textarea name="wordList" rows="3" placeholder="如：abandon, abstract, academic..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💡 学习心得/记忆方法</label>
+              <textarea name="notes" rows="2" placeholder="词根词缀、联想记忆等..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-blue">
+          <h3>📊 学习统计</h3>
+          <div id="englishStats" class="stats-container"></div>
+        </div>
+        <div class="card card-blue">
+          <h3>📈 近7天单词学习量</h3>
+          <div id="englishChart" class="chart-container"></div>
+        </div>
+        <div class="card card-blue">
+          <div class="card-header">
+            <h3>📖 单词记录</h3>
+            <div class="filters">
+              <select id="englishFilterMastery" class="filter-select">
+                <option value="">全部掌握程度</option>
+                <option value="1">⭐ 认识</option>
+                <option value="2">⭐⭐ 能用</option>
+                <option value="3">⭐⭐⭐ 熟练</option>
+                <option value="4">⭐⭐⭐⭐ 精通</option>
+              </select>
+              <select id="englishFilterKey" class="filter-select">
+                <option value="">全部</option>
+                <option value="true">⭐ 仅重点</option>
+              </select>
+            </div>
+          </div>
+          <div id="englishList" class="timeline-container"></div>
+        </div>
+      </section>
+
+      <!-- 校招 -->
+      <section id="campus" class="section">
+        <div class="section-header">
+          <h2>🎓 校招 <span class="tag">嵌入式软件工程师</span></h2>
+        </div>
+        <div class="card card-purple">
+          <h3>➕ 新增面试记录</h3>
+          <form id="campusForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 记录日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>⏰ 面试时间</label>
+              <input type="datetime-local" name="interviewDate" placeholder="选择面试时间">
+            </div>
+            <div class="form-field">
+              <label>🔧 方向</label>
+              <select name="direction" required>
+                <option value="bsp">💻 BSP软件</option>
+                <option value="multimedia">🎬 多媒体开发</option>
+                <option value="algorithm">🤖 算法应用</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>👤 候选人</label>
+              <input type="text" name="candidate" placeholder="候选人姓名" required>
+            </div>
+            <div class="form-field">
+              <label>👨‍💼 面试官</label>
+              <input type="text" name="interviewer" placeholder="面试官姓名" required>
+            </div>
+            <div class="form-field">
+              <label>🔄 轮次</label>
+              <select name="round">
+                <option value="一面">一面</option>
+                <option value="二面">二面</option>
+                <option value="三面">三面</option>
+                <option value="HR面">HR面</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>📌 面试状态</label>
+              <select name="interviewStatus">
+                <option value="unscheduled">📋 待安排</option>
+                <option value="scheduled">📌 已安排</option>
+                <option value="completed">✅ 已完成</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>📊 面试结果</label>
+              <select name="interviewResult">
+                <option value="pending">⏳ 待定</option>
+                <option value="passed">✅ 通过</option>
+                <option value="failed">❌ 未通过</option>
+              </select>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 备注</label>
+              <textarea name="notes" rows="2" placeholder="补充说明..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-purple">
+          <h3>📊 方向统计（本周）</h3>
+          <div id="campusStats" class="stats-container"></div>
+        </div>
+        <div class="card card-purple">
+          <div class="card-header">
+            <h3>📋 面试记录</h3>
+            <div class="filters">
+              <select id="campusFilterDirection" class="filter-select">
+                <option value="">全部方向</option>
+                <option value="bsp">💻 BSP软件</option>
+                <option value="multimedia">🎬 多媒体开发</option>
+                <option value="algorithm">🤖 算法应用</option>
+              </select>
+              <select id="campusFilterStatus" class="filter-select">
+                <option value="">全部面试状态</option>
+                <option value="unscheduled">📋 待安排</option>
+                <option value="scheduled">📌 已安排</option>
+                <option value="completed">✅ 已完成</option>
+              </select>
+              <select id="campusFilterResult" class="filter-select">
+                <option value="">全部面试结果</option>
+                <option value="pending">⏳ 待定</option>
+                <option value="passed">✅ 通过</option>
+                <option value="failed">❌ 未通过</option>
+              </select>
+            </div>
+          </div>
+          <div id="campusList" class="table-container"></div>
+        </div>
+      </section>
+
+      <!-- 实习生 -->
+      <section id="intern" class="section">
+        <div class="section-header">
+          <h2>🧸 实习生招聘</h2>
+        </div>
+        <div class="card card-yellow">
+          <h3>➕ 新增实习生记录</h3>
+          <form id="internForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 记录日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>⏰ 面试时间</label>
+              <input type="datetime-local" name="interviewDate" placeholder="选择面试时间">
+            </div>
+            <div class="form-field">
+              <label>💼 岗位</label>
+              <select name="position" required>
+                <option value="embedded">🔧 嵌入式软件工程师</option>
+                <option value="api">🌐 API实习生</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>👤 候选人</label>
+              <input type="text" name="candidate" placeholder="候选人姓名" required>
+            </div>
+            <div class="form-field">
+              <label>👨‍🏫 导师</label>
+              <input type="text" name="mentor" placeholder="导师姓名">
+            </div>
+            <div class="form-field">
+              <label>📌 面试状态</label>
+              <select name="interviewStatus">
+                <option value="unscheduled">📋 待安排</option>
+                <option value="scheduled">📌 已安排</option>
+                <option value="completed">✅ 已完成</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>📊 面试结果</label>
+              <select name="interviewResult">
+                <option value="pending">⏳ 待定</option>
+                <option value="passed">✅ 通过</option>
+                <option value="failed">❌ 未通过</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>🤝 匹配状态</label>
+              <select name="matchStatus">
+                <option value="pending">⏳ 待匹配</option>
+                <option value="matched">✅ 已匹配</option>
+                <option value="rejected">❌ 已拒绝</option>
+              </select>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 备注</label>
+              <textarea name="notes" rows="2" placeholder="补充说明..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-yellow">
+          <h3>📊 岗位统计</h3>
+          <div id="internStats" class="stats-container"></div>
+        </div>
+        <div class="card card-yellow">
+          <div class="card-header">
+            <h3>📋 实习生记录</h3>
+            <div class="filters">
+              <select id="internFilterPosition" class="filter-select">
+                <option value="">全部岗位</option>
+                <option value="embedded">🔧 嵌入式软件工程师</option>
+                <option value="api">🌐 API实习生</option>
+              </select>
+              <select id="internFilterStatus" class="filter-select">
+                <option value="">全部面试状态</option>
+                <option value="unscheduled">📋 待安排</option>
+                <option value="scheduled">📌 已安排</option>
+                <option value="completed">✅ 已完成</option>
+              </select>
+              <select id="internFilterResult" class="filter-select">
+                <option value="">全部面试结果</option>
+                <option value="pending">⏳ 待定</option>
+                <option value="passed">✅ 通过</option>
+                <option value="failed">❌ 未通过</option>
+              </select>
+            </div>
+          </div>
+          <div id="internList" class="table-container"></div>
+        </div>
+      </section>
+
+      <!-- 身体管理 -->
+      <section id="body" class="section">
+        <div class="section-header">
+          <h2>⚖️ 身体管理</h2>
+        </div>
+        <div class="card card-green">
+          <h3>➕ 记录今日数据</h3>
+          <form id="bodyForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>📏 身高（cm）</label>
+              <input type="number" name="height" min="100" max="250" step="0.1" placeholder="170">
+            </div>
+            <div class="form-field">
+              <label>⚖️ 体重（kg）</label>
+              <input type="number" name="weight" min="30" max="200" step="0.1" placeholder="65">
+            </div>
+            <div class="form-field">
+              <label>🔥 基础代谢</label>
+              <input type="number" name="bmr" min="800" max="3000" placeholder="自动计算或手动填写">
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 今日身体感受</label>
+              <textarea name="notes" rows="3" placeholder="记录今天身体状态..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-green">
+          <h3>📊 身体数据趋势</h3>
+          <div id="bodyChart" class="chart-container"></div>
+        </div>
+        <div class="card card-green">
+          <h3>📋 记录历史</h3>
+          <div id="bodyList" class="table-container"></div>
+        </div>
+      </section>
+
+      <!-- 运动打卡 -->
+      <section id="fitness" class="section">
+        <div class="section-header">
+          <h2>🏃 运动打卡</h2>
+        </div>
+        <div class="card card-yellow">
+          <h3>➕ 记录今日运动</h3>
+          <form id="fitnessForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>🏃 运动类型</label>
+              <select name="type">
+                <option value="跑步">🏃 跑步</option>
+                <option value="散步">🚶 散步</option>
+                <option value="瑜伽">🧘 瑜伽</option>
+                <option value="跳绳">🪢 跳绳</option>
+                <option value="力量训练">💪 力量训练</option>
+                <option value="骑车">🚴 骑车</option>
+                <option value="游泳">🏊 游泳</option>
+                <option value="羽毛球">🏸 羽毛球</option>
+                <option value="其他">🌟 其他</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>⏱️ 时长（分钟）</label>
+              <input type="number" name="duration" min="0" value="30">
+            </div>
+            <div class="form-field">
+              <label>📏 距离（km）</label>
+              <input type="number" name="distance" min="0" step="0.1" placeholder="可选">
+            </div>
+            <div class="form-field">
+              <label>🔥 消耗卡路里</label>
+              <input type="number" name="calories" min="0" value="0">
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 运动感受</label>
+              <textarea name="notes" rows="2" placeholder="今天运动感觉怎么样？"></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 打卡</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-yellow">
+          <h3>📊 运动统计</h3>
+          <div id="fitnessStats" class="stats-container"></div>
+        </div>
+        <div class="card card-yellow">
+          <h3>📖 运动记录</h3>
+          <div id="fitnessList" class="timeline-container"></div>
+        </div>
+      </section>
+
+      <!-- 饮食记录 -->
+      <section id="diet" class="section">
+        <div class="section-header">
+          <h2>🥗 饮食记录</h2>
+        </div>
+        <div class="card card-orange">
+          <h3>➕ 记录今日饮食</h3>
+          <form id="dietForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>🍜 今日食物</label>
+              <input type="text" name="food" placeholder="如：米饭、鸡胸肉、西兰花、奶茶...">
+            </div>
+            <div class="form-field">
+              <label>🍚 主食（克）</label>
+              <input type="number" name="staple" min="0" value="0" placeholder="米饭/面条等">
+            </div>
+            <div class="form-field">
+              <label>🥩 蛋白质（克）</label>
+              <input type="number" name="protein" min="0" value="0" placeholder="肉/蛋/鱼/豆">
+            </div>
+            <div class="form-field">
+              <label>🥬 蔬菜（克）</label>
+              <input type="number" name="vegetable" min="0" value="0" placeholder="蔬菜类">
+            </div>
+            <div class="form-field">
+              <label>🍰 零食/其他（克）</label>
+              <input type="number" name="snack" min="0" value="0" placeholder="零食/水果/饮料">
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 饮食感受</label>
+              <textarea name="notes" rows="2" placeholder="今天吃得怎么样？"></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-blue">
+          <h3>💧 今日饮水进度</h3>
+          <div class="water-controls">
+            <div class="water-buttons">
+              <button class="water-btn" data-amount="200">+200ml</button>
+              <button class="water-btn" data-amount="300">+300ml</button>
+              <button class="water-btn" data-amount="500">+500ml</button>
+              <button class="water-btn water-reset" data-amount="reset">归零</button>
+            </div>
+          </div>
+          <div id="waterProgress" class="water-progress-container"></div>
+        </div>
+        <div class="card card-orange">
+          <h3>📊 今日饮食汇总</h3>
+          <div id="dietTodayStats" class="stats-container"></div>
+        </div>
+        <div class="card card-orange">
+          <h3>📖 饮食记录</h3>
+          <div id="dietList" class="timeline-container"></div>
+        </div>
+      </section>
+
+      <!-- 今日心情 -->
+      <section id="mood" class="section">
+        <div class="section-header">
+          <h2>💝 今日心情</h2>
+        </div>
+        <div class="card card-pink">
+          <h3>➕ 记录心情</h3>
+          <form id="moodForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>🌟 今日心情</label>
+              <select name="mood">
+                <option value="😄">😄 超开心</option>
+                <option value="🙂">🙂 还不错</option>
+                <option value="😐">😐 一般般</option>
+                <option value="😔">😔 有点emo</option>
+                <option value="😢">😢 难过</option>
+                <option value="😤">😤 烦躁</option>
+                <option value="🥱">🥱 好累</option>
+                <option value="🤒">🤒 不舒服</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>🎯 心情评分（1-10）</label>
+              <input type="number" name="score" min="1" max="10" value="7">
+            </div>
+            <div class="form-field form-field-wide">
+              <label>✏️ 今日小记</label>
+              <textarea name="notes" rows="4" placeholder="今天发生了什么？有什么想说的..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 记录心情</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-pink">
+          <h3>📊 心情统计</h3>
+          <div id="moodStats" class="stats-container"></div>
+        </div>
+        <div class="card card-pink">
+          <h3>📅 近14天心情曲线</h3>
+          <div id="moodChart" class="chart-container"></div>
+        </div>
+        <div class="card card-pink">
+          <h3>📖 心情日记</h3>
+          <div id="moodList" class="timeline-container"></div>
+        </div>
+      </section>
+
+      <!-- 睡眠记录 -->
+      <section id="sleep" class="section">
+        <div class="section-header">
+          <h2>😴 睡眠记录</h2>
+        </div>
+        <div class="card card-purple">
+          <h3>➕ 记录睡眠</h3>
+          <form id="sleepForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>🌙 入睡时间</label>
+              <input type="time" name="bedtime" placeholder="23:30">
+            </div>
+            <div class="form-field">
+              <label>☀️ 起床时间</label>
+              <input type="time" name="wakeup" placeholder="07:00">
+            </div>
+            <div class="form-field">
+              <label>😴 睡眠质量</label>
+              <select name="quality">
+                <option value="5">🌟🌟🌟🌟🌟 超好</option>
+                <option value="4">🌟🌟🌟🌟 好</option>
+                <option value="3">🌟🌟🌟 一般</option>
+                <option value="2">🌟🌟 较差</option>
+                <option value="1">🌟 很差</option>
+              </select>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 睡前状态</label>
+              <textarea name="notes" rows="2" placeholder="睡前在做什么？有没有失眠？"></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>🌙 梦境记录</label>
+              <textarea name="dream" rows="3" placeholder="做了什么梦？记得多少写多少..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-purple">
+          <h3>📊 睡眠统计</h3>
+          <div id="sleepStats" class="stats-container"></div>
+        </div>
+        <div class="card card-purple">
+          <h3>📅 近14天睡眠时长</h3>
+          <div id="sleepChart" class="chart-container"></div>
+        </div>
+        <div class="card card-purple">
+          <h3>📖 睡眠记录</h3>
+          <div id="sleepList" class="timeline-container"></div>
+        </div>
+      </section>
+
+      <!-- 服饰搭配 -->
+      <section id="outfit" class="section">
+        <div class="section-header">
+          <h2>👗 服饰搭配</h2>
+        </div>
+        <div class="card card-purple">
+          <h3>➕ 记录今日穿搭</h3>
+          <form id="outfitForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>🎨 色系</label>
+              <select name="colorScheme">
+                <option value="暖色系">🔥 暖色系</option>
+                <option value="冷色系">❄️ 冷色系</option>
+                <option value="黑白灰">⚫⚪ 黑白灰</option>
+                <option value="大地色">🍂 大地色</option>
+                <option value="莫兰迪">🌫️ 莫兰迪</option>
+                <option value="明亮撞色">🌈 明亮撞色</option>
+                <option value="同色系">🎯 同色系</option>
+                <option value="碎花/图案">🌸 碎花/图案</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>👕 风格</label>
+              <select name="style">
+                <option value="休闲">👕 休闲</option>
+                <option value="通勤">💼 通勤</option>
+                <option value="学院风">🎓 学院风</option>
+                <option value="甜美">🎀 甜美</option>
+                <option value="极简">✨ 极简</option>
+                <option value="运动">🏃 运动</option>
+                <option value="复古">📻 复古</option>
+                <option value="其他">🌟 其他</option>
+              </select>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>📸 上传服饰照片</label>
+              <input type="file" name="photo" accept="image/*" class="file-input">
+              <div id="outfitPhotoPreview" class="photo-preview"></div>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 穿搭心得</label>
+              <textarea name="notes" rows="2" placeholder="今天的搭配灵感..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-purple">
+          <h3>💡 穿搭建议</h3>
+          <div id="outfitAdvice" class="advice-container"></div>
+        </div>
+        <div class="card card-purple">
+          <h3>📖 穿搭记录</h3>
+          <div id="outfitList" class="gallery-container"></div>
+        </div>
+      </section>
+
+      <!-- 收支管理 -->
+      <section id="finance" class="section">
+        <div class="section-header">
+          <h2>💰 收支管理</h2>
+        </div>
+        <div class="card card-green">
+          <h3>➕ 记录一笔收支</h3>
+          <form id="financeForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>📊 收支类型</label>
+              <select name="type">
+                <option value="income">💰 收入</option>
+                <option value="expense">💸 支出</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>📂 分类</label>
+              <select name="category">
+                <option value="餐饮">🍜 餐饮</option>
+                <option value="交通">🚌 交通</option>
+                <option value="购物">🛍️ 购物</option>
+                <option value="娱乐">🎮 娱乐</option>
+                <option value="学习">📚 学习</option>
+                <option value="日用">🏠 日用</option>
+                <option value="服饰">👗 服饰</option>
+                <option value="社交">🧺 社交</option>
+                <option value="工资">💼 工资</option>
+                <option value="兼职">📝 兼职</option>
+                <option value="理财收益">📈 理财收益</option>
+                <option value="其他">🌟 其他</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>💵 金额（元）</label>
+              <input type="number" name="amount" min="0" step="0.01" placeholder="0.00" required>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 备注</label>
+              <textarea name="notes" rows="2" placeholder="补充说明..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-green">
+          <h3>📊 本月收支概览</h3>
+          <div id="financeMonthStats" class="stats-container"></div>
+        </div>
+        <div class="card card-green">
+          <h3>📊 支出分类统计（本月）</h3>
+          <div id="financeCategoryChart" class="chart-container"></div>
+        </div>
+        <div class="card card-green">
+          <h3>💡 理财小建议</h3>
+          <div id="financeAdvice" class="advice-container"></div>
+        </div>
+        <div class="card card-green">
+          <h3>📖 收支记录</h3>
+          <div id="financeList" class="table-container"></div>
+        </div>
+      </section>
+
+      <!-- 人际管理 -->
+      <section id="social" class="section">
+        <div class="section-header">
+          <h2>🧺 人际管理</h2>
+        </div>
+        <div class="card card-pink">
+          <h3>➕ 记录社交互动</h3>
+          <form id="socialForm" class="form-grid">
+            <div class="form-field">
+              <label>📅 日期</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label>👤 朋友/对象</label>
+              <input type="text" name="friend" placeholder="姓名" required>
+            </div>
+            <div class="form-field">
+              <label>🎉 活动内容</label>
+              <input type="text" name="activity" placeholder="如：聚餐、电话、一起学习">
+            </div>
+            <div class="form-field">
+              <label>🧭 社交方向</label>
+              <select name="direction">
+                <option value="维护老友">💌 维护老友</option>
+                <option value="拓展新圈">🌟 拓展新圈</option>
+                <option value="家人陪伴">🏠 家人陪伴</option>
+                <option value="恋爱关系">💗 恋爱关系</option>
+                <option value="同学互动">🎓 同学互动</option>
+                <option value="同事社交">💼 同事社交</option>
+              </select>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>💬 感悟/备注</label>
+              <textarea name="notes" rows="3" placeholder="今天的互动感受..."></textarea>
+            </div>
+            <div class="form-field form-field-wide">
+              <label>📸 照片记录</label>
+              <input type="file" name="photo" accept="image/*" class="file-input">
+              <div id="socialPhotoPreview" class="photo-preview"></div>
+            </div>
+            <div class="form-field form-field-wide">
+              <button type="submit" class="btn btn-cute-primary">✨ 添加记录</button>
+            </div>
+          </form>
+        </div>
+        <div class="card card-pink">
+          <h3>📊 人际统计</h3>
+          <div id="socialStats" class="stats-container"></div>
+        </div>
+        <div class="card card-pink">
+          <h3>📖 互动记录</h3>
+          <div id="socialList" class="timeline-container"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- 数据备份中心 -->
+  <section id="backup" class="section">
+    <div class="section-header">
+      <h2>💾 数据备份中心</h2>
+    </div>
+    <div class="card card-green">
+      <h3>🔒 数据安全</h3>
+      <p style="font-size:13px;color:var(--text-secondary);margin-bottom:16px;line-height:1.8">
+        你的所有数据存储在浏览器本地（localStorage），不会上传到任何服务器。<br>
+        为防止数据丢失，建议定期备份。可以选择以下方式：
+      </p>
+      <div class="backup-actions">
+        <button id="backupJsonBtn" class="btn btn-cute-primary">📥 导出 JSON 备份</button>
+        <button id="backupCsvBtn" class="btn btn-cute">📊 导出 CSV 明细</button>
+        <button id="backupOfflineBtn" class="btn btn-cute">💾 下载离线版网页</button>
+        <button id="backupImportBtn" class="btn btn-cute">📤 导入恢复</button>
+      </div>
+    </div>
+    <div class="card card-green">
+      <h3>📊 数据概览</h3>
+      <div id="backupStats" class="stats-container"></div>
+    </div>
+    <div class="card card-green">
+      <h3>⏰ 自动备份提醒</h3>
+      <div id="backupReminder" class="advice-container"></div>
+    </div>
+    <div class="card card-green">
+      <h3>📤 导入数据</h3>
+      <p style="font-size:13px;color:var(--text-secondary);margin-bottom:12px">选择之前导出的 JSON 备份文件恢复数据：</p>
+      <input type="file" id="restoreFileInput" accept=".json" class="file-input" style="max-width:400px;margin-bottom:12px">
+    </div>
+  </section>
+
+  <!-- 导入弹窗 -->
+  <div id="importModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h3>📥 导入数据</h3>
+      <p>粘贴之前导出的 JSON 数据：</p>
+      <textarea id="importTextarea" rows="10" placeholder='{"version":1,"data":{...}}'></textarea>
+      <div class="modal-actions">
+        <button id="importConfirm" class="btn btn-cute-primary">确认导入</button>
+        <button id="importCancel" class="btn btn-cute">取消</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast 通知 -->
+  <div id="toast" class="toast"></div>
+
+  <script>
+// ===== 数据存储层 =====
+const DB = {
+  KEY: 'daily_dashboard_v2',
+  data: null,
+  init() {
+    const raw = localStorage.getItem(this.KEY);
+    if (raw) {
+      try { this.data = JSON.parse(raw); } catch(e) { this.data = this.defaultData(); }
+    } else {
+      this.data = this.defaultData();
+    }
+    // 兼容旧数据迁移
+    if (!this.data.body) this.data.body = this.data.self || [];
+    if (!this.data.fitness) this.data.fitness = [];
+    if (!this.data.diet) this.data.diet = [];
+    if (!this.data.mood) this.data.mood = [];
+    if (!this.data.sleep) this.data.sleep = [];
+    if (!this.data.outfit) this.data.outfit = [];
+    if (!this.data.finance) this.data.finance = [];
+    if (!this.data.todos) this.data.todos = [];
+    if (!this.data.english) this.data.english = [];
+  },
+  defaultData() {
+    return { campus: [], intern: [], thesis: [], civil: [], english: [], body: [], fitness: [], diet: [], mood: [], sleep: [], social: [], outfit: [], finance: [], todos: [] };
+  },
+  save() { localStorage.setItem(this.KEY, JSON.stringify(this.data)); },
+  getAll() { return this.data; },
+  add(section, item) {
+    if (!this.data[section]) this.data[section] = [];
+    item.id = Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+    item.createdAt = new Date().toISOString();
+    this.data[section].unshift(item);
+    this.save();
+  },
+  remove(section, id) {
+    this.data[section] = this.data[section].filter(i => i.id !== id);
+    this.save();
+  },
+  update(section, id, updates) {
+    const item = this.data[section] && this.data[section].find(i => i.id === id);
+    if (item) { Object.assign(item, updates); this.save(); }
+  },
+  clear() {
+    this.data = this.defaultData();
+    this.save();
+  },
+  export() {
+    return JSON.stringify({ version: 2, data: this.data, exportedAt: new Date().toISOString() }, null, 2);
+  },
+  import(jsonStr) {
+    const parsed = JSON.parse(jsonStr);
+    if (parsed.data) {
+      this.data = Object.assign(this.defaultData(), parsed.data);
+      this.save();
+      return true;
+    }
+    return false;
+  }
+};
+
+// ===== 常量 =====
+const DIRECTIONS = { bsp: '💻 BSP软件', multimedia: '🎬 多媒体开发', algorithm: '🤖 算法应用' };
+const DIRECTION_COLORS = { bsp: '#98b8c8', multimedia: '#b0a0b8', algorithm: '#a0c0a0' };
+const STATUSES_CAMPUS = { pending: '⏳ 待定', passed: '✅ 通过', failed: '❌ 未通过' };
+const INTERVIEW_STATUSES = { unscheduled: '📋 待安排', scheduled: '📌 已安排', completed: '✅ 已完成' };
+const STATUSES_INTERN = { pending: '⏳ 待匹配', matched: '✅ 已匹配', rejected: '❌ 已拒绝' };
+const POSITIONS = { embedded: '🔧 嵌入式软件工程师', api: '🌐 API实习生' };
+const CIVIL_SECTIONS = ['言语理解', '数量关系', '判断推理', '资料分析', '常识判断', '申论'];
+const CIVIL_SECTION_EMOJI = { '言语理解': '📖', '数量关系': '🔢', '判断推理': '🧩', '资料分析': '📊', '常识判断': '🌍', '申论': '✍️' };
+const CIVIL_SECTION_COLORS = { '言语理解': '#98b8c8', '数量关系': '#b0a0b8', '判断推理': '#a0c0a0', '资料分析': '#e8d070', '常识判断': '#c08080', '申论': '#c08080' };
+const WATER_GOAL = 2000; // 每日饮水目标 ml
+
+// ===== 励志语录 =====
+const QUOTES = [
+  '每一份努力都不会被辜负，加油呀～',
+  '今天也是充满希望的一天！',
+  '慢慢来，比较快。',
+  '你比想象中更强大。',
+  '与其担心未来，不如现在好好努力。',
+  '生活明朗，万物可爱，人间值得，未来可期。',
+  '但行好事，莫问前程。',
+  '所有的努力都不会完全白费。',
+  '你走过的每一步都算数。',
+  '愿所有美好如期而至。',
+  '今日事今日毕，明日还有明日事。',
+  '把每一天都当作生命的第一天来过。'
+];
+
+const GREETINGS = {
+  morning: { text: '早上好', emoji: '🌅' },
+  noon: { text: '中午好', emoji: '☀️' },
+  afternoon: { text: '下午好', emoji: '🌤️' },
+  evening: { text: '晚上好', emoji: '🌙' },
+  night: { text: '夜深了', emoji: '✨' }
+};
+
+function getGreeting() {
+  const h = new Date().getHours();
+  if (h < 6) return GREETINGS.night;
+  if (h < 12) return GREETINGS.morning;
+  if (h < 14) return GREETINGS.noon;
+  if (h < 18) return GREETINGS.afternoon;
+  if (h < 22) return GREETINGS.evening;
+  return GREETINGS.night;
+}
+
+function renderGreeting() {
+  const g = getGreeting();
+  const quote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
+  document.getElementById('greetingBar').innerHTML = `
+    <div>
+      <div class="greeting-text">${g.emoji} ${g.text}，怡菲～</div>
+      <div class="greeting-sub">「${quote}」</div>
+    </div>
+    <div class="greeting-emoji">👧</div>
+  `;
+}
+
+// ===== 工具函数 =====
+const Util = {
+  today() { return new Date().toISOString().split('T')[0]; },
+  formatDate(d) {
+    if (!d) return '';
+    const date = new Date(d);
+    return `${date.getMonth()+1}月${date.getDate()}日`;
+  },
+  formatDateFull(d) {
+    if (!d) return '';
+    const date = new Date(d);
+    return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
+  },
+  weekRange() {
+    const now = new Date();
+    const day = now.getDay() || 7;
+    const monday = new Date(now);
+    monday.setDate(now.getDate() - day + 1);
+    const sunday = new Date(monday);
+    sunday.setDate(monday.getDate() + 6);
+    return { start: monday.toISOString().split('T')[0], end: sunday.toISOString().split('T')[0] };
+  },
+  last7Days() {
+    const days = [];
+    for (let i = 6; i >= 0; i--) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      days.push(d.toISOString().split('T')[0]);
+    }
+    return days;
+  },
+  last14Days() {
+    const days = [];
+    for (let i = 13; i >= 0; i--) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      days.push(d.toISOString().split('T')[0]);
+    }
+    return days;
+  },
+  formatDateTime(dt) {
+    if (!dt) return '-';
+    const d = new Date(dt);
+    return `${d.getMonth()+1}月${d.getDate()}日 ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+  },
+  escapeHtml(s) {
+    if (!s) return '';
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  },
+  showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2500);
+  },
+  calcSleepHours(bedtime, wakeup) {
+    if (!bedtime || !wakeup) return 0;
+    const [bh, bm] = bedtime.split(':').map(Number);
+    const [wh, wm] = wakeup.split(':').map(Number);
+    let minutes = (wh * 60 + wm) - (bh * 60 + bm);
+    if (minutes < 0) minutes += 24 * 60; // 跨天
+    return Math.round((minutes / 60) * 10) / 10;
+  }
+};
+
+// ===== 导航 =====
+const Nav = {
+  init() {
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.addEventListener('click', e => {
+        e.preventDefault();
+        this.switchTo(item.dataset.section);
+      });
+    });
+    const toggle = document.createElement('button');
+    toggle.className = 'menu-toggle';
+    toggle.innerHTML = '👧';
+    toggle.onclick = () => document.querySelector('.sidebar').classList.toggle('open');
+    document.body.appendChild(toggle);
+  },
+  switchTo(section) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    document.getElementById(section)?.classList.add('active');
+    document.querySelector(`.nav-item[data-section="${section}"]`)?.classList.add('active');
+    document.querySelector('.sidebar')?.classList.remove('open');
+    Modules[section]?.render();
+  }
+};
+
+// ===== 各模块 =====
+const Modules = {};
+
+// --- 小主页 ---
+Modules.overview = {
+  render() {
+    renderGreeting();
+    const data = DB.getAll();
+    const today = Util.today();
+    document.getElementById('todayDate').textContent = '📅 ' + Util.formatDateFull(today);
+
+    // 统计卡片 - 以学习和生活为主
+    const todayThesis = data.thesis.filter(i => i.date === today);
+    const todayReading = todayThesis.reduce((s, i) => s + (Number(i.readingCount)||0), 0);
+    const todayCivil = data.civil.filter(i => i.date === today);
+    const todayQuestions = todayCivil.reduce((s, i) => s + (Number(i.questionCount)||0), 0);
+    const todayFitness = data.fitness.filter(i => i.date === today);
+    const todayCalories = todayFitness.reduce((s, i) => s + (Number(i.calories)||0), 0);
+    const todayDiet = data.diet.filter(i => i.date === today);
+    const todayWater = todayDiet.reduce((s, i) => s + (Number(i.water)||0), 0);
+    const todayIntake = todayDiet.reduce((s, i) => s + (Number(i.calories)||0), 0);
+    const todayMood = data.mood.find(i => i.date === today);
+    const latestBody = data.body[0];
+    const latestWeight = latestBody ? latestBody.weight : null;
+    const todaySleep = data.sleep.find(i => i.date === today);
+    const sleepHours = todaySleep ? Util.calcSleepHours(todaySleep.bedtime, todaySleep.wakeup) : null;
+    const last7Fitness = data.fitness.filter(i => Util.last7Days().includes(i.date));
+    const last7FitnessMin = last7Fitness.reduce((s, i) => s + (Number(i.duration)||0), 0);
+
+    const statsHtml = `
+      <div class="stat-card info"><div class="stat-value">${todayReading}</div><div class="stat-label">📖 今日文献</div></div>
+      <div class="stat-card success"><div class="stat-value">${todayQuestions}</div><div class="stat-label">📝 今日做题</div></div>
+      <div class="stat-card warning"><div class="stat-value">${todayCalories}</div><div class="stat-label">🔥 今日消耗(kcal)</div></div>
+      <div class="stat-card info"><div class="stat-value">${todayIntake}</div><div class="stat-label">🍽️ 今日摄入(kcal)</div></div>
+      <div class="stat-card success"><div class="stat-value">${todayWater}</div><div class="stat-label">💧 今日饮水(ml)</div></div>
+      ${latestWeight ? `<div class="stat-card"><div class="stat-value">${latestWeight}</div><div class="stat-label">⚖️ 最新体重(kg)</div></div>` : ''}
+      ${sleepHours !== null ? `<div class="stat-card ${sleepHours >= 7 ? 'success' : 'warning'}"><div class="stat-value">${sleepHours}h</div><div class="stat-label">😴 昨晚睡眠</div></div>` : ''}
+      ${todayMood ? `<div class="stat-card"><div class="stat-value" style="font-size:24px">${todayMood.mood}</div><div class="stat-label">💝 今日心情</div></div>` : ''}
+      <div class="stat-card"><div class="stat-value">${last7FitnessMin}</div><div class="stat-label">🏃 近7天运动(分钟)</div></div>
+    `;
+    document.getElementById('overviewStats').innerHTML = statsHtml;
+
+    this.renderTodos();
+    this.renderWeather();
+    this.renderReadingChart(data.thesis);
+    this.renderCivilWeekChart(data.civil);
+    this.renderWeightChart(data.body);
+    this.renderFitnessWeekChart(data.fitness);
+    this.renderWaterWeekChart(data.diet);
+    this.renderSleepWeekChart(data.sleep);
+  },
+
+  renderWeather() {
+    fetch('https://wttr.in/Shenzhen?format=j1&lang=zh')
+      .then(r => r.json())
+      .then(data => {
+        const current = data.current_condition && data.current_condition[0];
+        if (!current) throw new Error('no data');
+        const temp = current.temp_C;
+        const desc = current.lang_zh && current.lang_zh[0] ? current.lang_zh[0].value : current.weatherDesc[0].value;
+        const humidity = current.humidity;
+        const wind = current.windspeedKmph;
+        const feelsLike = current.FeelsLikeC;
+        const html = `
+          <div class="weather-info">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+              <span style="font-size:28px">${this.weatherIcon(desc)}</span>
+              <span class="weather-temp">${temp}°C</span>
+              <span style="font-size:14px;color:var(--text-secondary)">${desc}</span>
+            </div>
+            📍 深圳市宝安区·会展湾云岸广场<br>
+            🌡️ 体感 ${feelsLike}°C · 💧 湿度 ${humidity}% · 🌬️ 风速 ${wind}km/h
+          </div>
+        `;
+        document.getElementById('weatherContent').innerHTML = html;
+      })
+      .catch(() => {
+        document.getElementById('weatherContent').innerHTML = '<div class="weather-info" style="color:var(--text-secondary)">🌤️ 深圳市·宝安区<br>天气获取失败，稍后刷新试试</div>';
+      });
+  },
+  weatherIcon(desc) {
+    if (!desc) return '🌤️';
+    if (desc.includes('雨')) return '🌧️';
+    if (desc.includes('雪')) return '❄️';
+    if (desc.includes('云') || desc.includes('阴')) return '☁️';
+    if (desc.includes('雷')) return '⛈️';
+    if (desc.includes('雾') || desc.includes('霾')) return '🌫️';
+    if (desc.includes('晴')) return '☀️';
+    return '🌤️';
+  },
+
+  renderTodos() {
+    const todos = DB.getAll().todos || [];
+    const today = Util.today();
+    const todayTodos = todos.filter(t => t.date === today);
+    const list = document.getElementById('todoList');
+    if (todayTodos.length === 0) {
+      list.innerHTML = '<div style="font-size:12px;color:var(--text-secondary);padding:4px 0">暂无待办，加一个吧～</div>';
+      return;
+    }
+    let html = '';
+    todayTodos.forEach(t => {
+      html += `<div class="todo-item ${t.done ? 'done' : ''}">
+        <input type="checkbox" class="todo-checkbox" ${t.done ? 'checked' : ''} onclick="Modules.overview.toggleTodo('${t.id}')">
+        <span class="todo-text">${Util.escapeHtml(t.text)}</span>
+        <button class="todo-delete" onclick="Modules.overview.delTodo('${t.id}')">×</button>
+      </div>`;
+    });
+    list.innerHTML = html;
+  },
+
+  addTodo(text) {
+    DB.add('todos', { date: Util.today(), text: text, done: false });
+    this.renderTodos();
+  },
+
+  toggleTodo(id) {
+    const todo = DB.getAll().todos.find(t => t.id === id);
+    if (todo) {
+      DB.update('todos', id, { done: !todo.done });
+      this.renderTodos();
+    }
+  },
+
+  delTodo(id) {
+    DB.remove('todos', id);
+    this.renderTodos();
+  },
+
+  renderReadingChart(thesisData) {
+    const days = Util.last7Days();
+    const values = days.map(d => thesisData.filter(i => i.date === d).reduce((s, i) => s + (Number(i.readingCount)||0), 0));
+    const max = Math.max(...values, 1);
+    let html = '<div class="bar-chart">';
+    days.forEach((d, idx) => {
+      const v = values[idx];
+      const pct = (v / max) * 100;
+      html += `<div class="bar-row">
+        <div class="bar-label">${Util.formatDate(d)}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${Math.max(pct, 5)}%;background:linear-gradient(90deg,#a0c8a0,#a0c0a0)">${v || ''}</div></div>
+      </div>`;
+    });
+    html += '</div>';
+    document.getElementById('readingChart').innerHTML = html;
+  },
+
+  renderCivilWeekChart(civilData) {
+    const week = Util.weekRange();
+    const weekData = civilData.filter(i => i.date >= week.start && i.date <= week.end);
+    const bySection = {};
+    CIVIL_SECTIONS.forEach(s => bySection[s] = { total: 0, correct: 0 });
+    weekData.forEach(i => {
+      if (bySection[i.section]) {
+        bySection[i.section].total += Number(i.questionCount) || 0;
+        bySection[i.section].correct += Number(i.correctCount) || 0;
+      }
+    });
+    const maxQ = Math.max(...Object.values(bySection).map(v => v.total), 1);
+    let html = '<div class="bar-chart">';
+    CIVIL_SECTIONS.forEach(s => {
+      const d = bySection[s];
+      const pct = (d.total / maxQ) * 100;
+      const acc = d.total > 0 ? ((d.correct / d.total) * 100).toFixed(0) + '%' : '';
+      html += `<div class="bar-row">
+        <div class="bar-label">${CIVIL_SECTION_EMOJI[s]} ${s}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${Math.max(pct, 5)}%;background:${CIVIL_SECTION_COLORS[s]}">${d.total || ''}</div></div>
+      </div>`;
+    });
+    html += '</div>';
+    html += `<p style="margin-top:8px;font-size:12px;color:var(--text-secondary)">本周（${Util.formatDate(week.start)} - ${Util.formatDate(week.end)}）共做题 ${weekData.reduce((s,i)=>s+(Number(i.questionCount)||0),0)} 道</p>`;
+    document.getElementById('civilWeekChart').innerHTML = html;
+  },
+
+  renderWeightChart(bodyData) {
+    const recent = bodyData.slice(0, 30).reverse();
+    if (recent.length === 0) {
+      document.getElementById('weightChart').innerHTML = '<div class="empty-state">暂无体重数据，快去记录吧～</div>';
+      return;
+    }
+    const weights = recent.map(i => Number(i.weight)).filter(v => v > 0);
+    if (weights.length === 0) {
+      document.getElementById('weightChart').innerHTML = '<div class="empty-state">暂无体重数据</div>';
+      return;
+    }
+    this.renderLineChart('weightChart', recent, 'weight', '#a0c0a0', 'kg');
+  },
+
+  renderFitnessWeekChart(fitnessData) {
+    const days = Util.last7Days();
+    const values = days.map(d => fitnessData.filter(i => i.date === d).reduce((s, i) => s + (Number(i.duration)||0), 0));
+    const max = Math.max(...values, 1);
+    let html = '<div class="bar-chart">';
+    days.forEach((d, idx) => {
+      const v = values[idx];
+      const pct = (v / max) * 100;
+      html += `<div class="bar-row">
+        <div class="bar-label">${Util.formatDate(d)}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${Math.max(pct, 5)}%;background:linear-gradient(90deg,#e8d070,#d8b850)">${v || ''}</div></div>
+      </div>`;
+    });
+    html += '</div>';
+    html += `<p style="margin-top:8px;font-size:12px;color:var(--text-secondary)">近7天共运动 ${values.reduce((a,b)=>a+b,0)} 分钟</p>`;
+    document.getElementById('fitnessWeekChart').innerHTML = html;
+  },
+
+  renderWaterWeekChart(dietData) {
+    const days = Util.last7Days();
+    const values = days.map(d => dietData.filter(i => i.date === d).reduce((s, i) => s + (Number(i.water)||0), 0));
+    const max = Math.max(...values, WATER_GOAL);
+    let html = '<div class="bar-chart">';
+    days.forEach((d, idx) => {
+      const v = values[idx];
+      const pct = (v / max) * 100;
+      html += `<div class="bar-row">
+        <div class="bar-label">${Util.formatDate(d)}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${Math.max(pct, 5)}%;background:linear-gradient(90deg,#98b8c8,#5ba8d5)">${v || ''}</div></div>
+      </div>`;
+    });
+    html += '</div>';
+    html += `<p style="margin-top:8px;font-size:12px;color:var(--text-secondary)">每日目标 ${WATER_GOAL}ml</p>`;
+    document.getElementById('waterWeekChart').innerHTML = html;
+  },
+
+  renderSleepWeekChart(sleepData) {
+    const days = Util.last7Days();
+    const values = days.map(d => {
+      const record = sleepData.find(i => i.date === d);
+      if (!record || !record.bedtime || !record.wakeup) return 0;
+      return Util.calcSleepHours(record.bedtime, record.wakeup);
+    });
+    const max = Math.max(...values, 8);
+    let html = '<div class="bar-chart">';
+    days.forEach((d, idx) => {
+      const v = values[idx];
+      const pct = (v / max) * 100;
+      const color = v >= 7 ? '#a0c0a0' : v >= 5 ? '#e8d070' : '#c08080';
+      html += `<div class="bar-row">
+        <div class="bar-label">${Util.formatDate(d)}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${Math.max(pct, 5)}%;background:${color}">${v ? v + 'h' : ''}</div></div>
+      </div>`;
+    });
+    html += '</div>';
+    html += `<p style="margin-top:8px;font-size:12px;color:var(--text-secondary)">建议睡眠 7-9 小时</p>`;
+    document.getElementById('sleepWeekChart').innerHTML = html;
+  },
+
+  renderLineChart(containerId, data, field, color, unit) {
+    const canvas = document.createElement('canvas');
+    const w = 380, h = 160;
+    canvas.width = w; canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    const values = data.map(i => Number(i[field]) || 0).filter(v => v > 0);
+    if (values.length === 0) {
+      document.getElementById(containerId).innerHTML = '<div class="empty-state">暂无数据</div>';
+      return;
+    }
+    const minV = Math.min(...values) - 2;
+    const maxV = Math.max(...values) + 2;
+    const range = maxV - minV || 1;
+    const pad = 35;
+    const cw = w - pad * 2;
+    const ch = h - pad;
+
+    ctx.strokeStyle = '#f0e0e0';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(pad, 20);
+    ctx.lineTo(pad, ch);
+    ctx.lineTo(w - pad, ch);
+    ctx.stroke();
+
+    const pts = data.map((i, idx) => {
+      const x = pad + (cw / Math.max(data.length - 1, 1)) * idx;
+      const y = ch - ((Number(i[field]) - minV) / range) * (ch - 30);
+      return { x, y, val: i[field], date: i.date };
+    });
+
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    pts.forEach((p, idx) => {
+      if (idx === 0) ctx.moveTo(p.x, p.y);
+      else ctx.lineTo(p.x, p.y);
+    });
+    ctx.stroke();
+
+    ctx.fillStyle = color;
+    pts.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    ctx.fillStyle = '#9b7a85';
+    ctx.font = '11px sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText(`${minV}${unit}`, 4, ch);
+    ctx.textAlign = 'right';
+    ctx.fillText(`${maxV}${unit}`, w - 4, 24);
+
+    if (pts.length > 0) {
+      const last = pts[pts.length - 1];
+      ctx.fillStyle = color;
+      ctx.font = 'bold 13px sans-serif';
+      ctx.textAlign = 'right';
+      ctx.fillText(`${last.val}${unit}`, last.x - 6, last.y - 10);
+    }
+
+    document.getElementById(containerId).innerHTML = '';
+    document.getElementById(containerId).appendChild(canvas);
+  }
+};
+
+// --- 论文 ---
+Modules.thesis = {
+  init() {
+    document.getElementById('thesisForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      DB.add('thesis', {
+        date: fd.get('date'),
+        readingCount: Number(fd.get('readingCount')) || 0,
+        readingNotes: fd.get('readingNotes'),
+        paperUrl: fd.get('paperUrl') || '',
+        ideas: fd.get('ideas'),
+        progress: fd.get('progress')
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 论文记录已添加');
+      this.render();
+    });
+  },
+  render() { this.renderStats(); this.renderList(); },
+  renderStats() {
+    const data = DB.getAll().thesis;
+    const totalReading = data.reduce((s, i) => s + (Number(i.readingCount)||0), 0);
+    const last7 = Util.last7Days();
+    const recentReading = data.filter(i => last7.includes(i.date)).reduce((s, i) => s + (Number(i.readingCount)||0), 0);
+    const todayReading = data.filter(i => i.date === Util.today()).reduce((s, i) => s + (Number(i.readingCount)||0), 0);
+
+    document.getElementById('thesisStats').innerHTML = `
+      <div class="stat-item"><div class="stat-value" style="color:#d4a5a5">${todayReading}</div><div class="stat-label">📖 今日阅读（篇）</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:#98b8c8">${recentReading}</div><div class="stat-label">📚 近7天阅读（篇）</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:#a0c0a0">${totalReading}</div><div class="stat-label">📊 累计阅读（篇）</div></div>
+      <div class="stat-item"><div class="stat-value">${data.length}</div><div class="stat-label">📝 总记录数</div></div>
+    `;
+  },
+  renderList() {
+    const data = DB.getAll().thesis.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('thesisList').innerHTML = '<div class="empty-state">还没有学习记录，开始记录吧～ 📖</div>';
+      return;
+    }
+    let html = '';
+    data.forEach(i => {
+      html += `<div class="timeline-item">
+        <div class="timeline-date">📅 ${Util.formatDateFull(i.date)} · 📚 阅读 ${i.readingCount} 篇${i.progress ? ' · ' + Util.escapeHtml(i.progress) : ''}</div>
+        <div class="timeline-content">
+          ${i.readingNotes ? `<p><strong>✏️ 文献笔记：</strong>${Util.escapeHtml(i.readingNotes)}</p>` : ''}
+          ${i.paperUrl ? `<p><strong>🔗 文献链接：</strong><a href="${Util.escapeHtml(i.paperUrl)}" target="_blank" style="color:var(--primary-dark);text-decoration:underline">点击查看</a></p>` : ''}
+          ${i.ideas ? `<p><strong>💡 想法：</strong>${Util.escapeHtml(i.ideas)}</p>` : ''}
+        </div>
+        <div style="text-align:right;margin-top:4px"><button class="action-btn" onclick="Modules.thesis.del('${i.id}')">🗑️</button></div>
+      </div>`;
+    });
+    document.getElementById('thesisList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('thesis', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 考公 ---
+Modules.civil = {
+  init() {
+    document.getElementById('civilForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const qCount = Number(fd.get('questionCount')) || 0;
+      const cCount = Number(fd.get('correctCount')) || 0;
+      DB.add('civil', {
+        date: fd.get('date'),
+        section: fd.get('section'),
+        content: fd.get('content'),
+        questionCount: qCount,
+        correctCount: Math.min(cCount, qCount),
+        duration: Number(fd.get('duration')) || 0,
+        studyDuration: Number(fd.get('studyDuration')) || 0,
+        notes: fd.get('notes')
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 考公记录已添加');
+      this.render();
+    });
+    // 时政要闻刷新按钮
+    document.getElementById('refreshNewsBtn').addEventListener('click', () => this.renderNews());
+    document.querySelectorAll('.news-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.news-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        this.renderNews();
+      });
+    });
+    // 倒计时定时器
+    setInterval(() => this.renderCountdown(), 1000);
+  },
+  renderCountdown() {
+    const target = new Date('2027-11-29T09:00:00+08:00');
+    const now = new Date();
+    const diff = target - now;
+    if (diff <= 0) {
+      document.getElementById('countdownNumbers').innerHTML = '<div class="countdown-number"><div class="num">🎉</div><div class="label">考试已到</div></div>';
+      return;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById('countdownNumbers').innerHTML = `
+      <div class="countdown-number"><div class="num">${days}</div><div class="label">天</div></div>
+      <div class="countdown-number"><div class="num">${hours}</div><div class="label">时</div></div>
+      <div class="countdown-number"><div class="num">${mins}</div><div class="label">分</div></div>
+      <div class="countdown-number"><div class="num">${secs}</div><div class="label">秒</div></div>
+    `;
+  },
+  render() { this.renderCountdown(); this.renderSectionStats(); this.renderAccuracyChart(); this.renderList(); this.renderNews(); },
+  renderNews() {
+    const activeTab = document.querySelector('.news-tab.active');
+    const source = activeTab ? activeTab.dataset.source : 'people';
+    const urls = {
+      people: 'http://www.people.com.cn/rss/politics.xml',
+      xinhua: 'http://www.xinhuanet.com/politics/news_politics.xml',
+      xinhuaWorld: 'http://www.xinhuanet.com/world/news_world.xml'
+    };
+    const labels = { people: '人民日报', xinhua: '新华社·时政', xinhuaWorld: '新华社·国际' };
+    document.getElementById('newsList').innerHTML = '<div class="empty-state">正在获取最新时政要闻...</div>';
+
+    // 使用 RSS to JSON 公共服务
+    fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(urls[source])}`)
+      .then(r => r.json())
+      .then(data => {
+        if (!data.items || data.items.length === 0) throw new Error('no items');
+        const items = data.items.slice(0, 15);
+        let html = '';
+        items.forEach(item => {
+          let desc = item.description || '';
+          desc = desc.replace(/<[^>]*>/g, '').substring(0, 120);
+          const date = item.pubDate ? new Date(item.pubDate).toLocaleDateString('zh-CN') : '';
+          html += `<div class="news-item">
+            <div class="news-title"><a href="${item.link}" target="_blank">${Util.escapeHtml(item.title)}</a></div>
+            <div class="news-desc">${Util.escapeHtml(desc)}...</div>
+            <div class="news-meta">📰 ${labels[source]} · 📅 ${date}</div>
+          </div>`;
+        });
+        html += `<div style="text-align:center;font-size:12px;color:var(--text-secondary);padding:8px">数据来源：${labels[source]} RSS</div>`;
+        document.getElementById('newsList').innerHTML = html;
+      })
+      .catch(() => {
+        fetch(`https://rss2json.com/v1/api.json?rss_url=${encodeURIComponent(urls[source])}`)
+          .then(r => r.json())
+          .then(data => {
+            if (!data.items) throw new Error('no items');
+            const items = data.items.slice(0, 15);
+            let html = '';
+            items.forEach(item => {
+              let desc = (item.description || '').replace(/<[^>]*>/g, '').substring(0, 120);
+              const date = item.pubDate ? new Date(item.pubDate).toLocaleDateString('zh-CN') : '';
+              html += `<div class="news-item">
+                <div class="news-title"><a href="${item.link}" target="_blank">${Util.escapeHtml(item.title)}</a></div>
+                <div class="news-desc">${Util.escapeHtml(desc)}...</div>
+                <div class="news-meta">📰 ${labels[source]} · 📅 ${date}</div>
+              </div>`;
+            });
+            document.getElementById('newsList').innerHTML = html;
+          })
+          .catch(() => {
+            document.getElementById('newsList').innerHTML = `<div class="empty-state">⚠️ 时政要闻获取失败，请稍后点击刷新重试。<br>也可直接访问：<br><a href="http://www.people.com.cn" target="_blank" style="color:var(--primary-dark)">人民日报</a> · <a href="http://www.xinhuanet.com" target="_blank" style="color:var(--primary-dark)">新华社</a></div>`;
+          });
+      });
+  },
+  renderSectionStats() {
+    const data = DB.getAll().civil;
+    let html = '';
+    CIVIL_SECTIONS.forEach(s => {
+      const items = data.filter(i => i.section === s);
+      const totalQ = items.reduce((sum, i) => sum + (Number(i.questionCount)||0), 0);
+      const totalC = items.reduce((sum, i) => sum + (Number(i.correctCount)||0), 0);
+      const totalStudy = items.reduce((sum, i) => sum + (Number(i.studyDuration)||0), 0);
+      const acc = totalQ > 0 ? ((totalC / totalQ) * 100).toFixed(1) + '%' : '-';
+      html += `<div class="stat-item">
+        <div class="stat-value" style="color:${CIVIL_SECTION_COLORS[s]}">${totalQ}</div>
+        <div class="stat-label">${CIVIL_SECTION_EMOJI[s]} ${s}</div>
+        <div style="font-size:12px;color:var(--text-secondary);margin-top:4px">✅ 正确率 ${acc}<br>📺 听课 ${totalStudy}分钟</div>
+      </div>`;
+    });
+    const totalQ = data.reduce((s, i) => s + (Number(i.questionCount)||0), 0);
+    const totalC = data.reduce((s, i) => s + (Number(i.correctCount)||0), 0);
+    const totalStudy = data.reduce((s, i) => s + (Number(i.studyDuration)||0), 0);
+    const totalDuration = data.reduce((s, i) => s + (Number(i.duration)||0), 0);
+    const totalAcc = totalQ > 0 ? ((totalC / totalQ) * 100).toFixed(1) + '%' : '-';
+    html += `<div class="stat-item"><div class="stat-value">${totalQ}</div><div class="stat-label">📊 累计做题</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px">总正确率 ${totalAcc}</div></div>`;
+    html += `<div class="stat-item"><div class="stat-value" style="color:#b0a0b8">${totalStudy}</div><div class="stat-label">📺 累计听课（分钟）</div></div>`;
+    html += `<div class="stat-item"><div class="stat-value" style="color:#98b8c8">${totalDuration}</div><div class="stat-label">⏰ 累计做题时长（分钟）</div></div>`;
+    document.getElementById('civilSectionStats').innerHTML = html;
+  },
+  renderAccuracyChart() {
+    const data = DB.getAll().civil.slice().sort((a, b) => a.date.localeCompare(b.date));
+    const recent = data.slice(-14);
+    if (recent.length === 0) {
+      document.getElementById('civilAccuracyChart').innerHTML = '<div class="empty-state">暂无数据</div>';
+      return;
+    }
+    const canvas = document.createElement('canvas');
+    const w = 380, h = 160;
+    canvas.width = w; canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    const pad = 35;
+    const cw = w - pad * 2;
+    const ch = h - pad;
+
+    ctx.strokeStyle = '#f0e0e0';
+    ctx.beginPath();
+    ctx.moveTo(pad, 20);
+    ctx.lineTo(pad, ch);
+    ctx.lineTo(w - pad, ch);
+    ctx.stroke();
+
+    // Y轴 0-100%
+    ctx.fillStyle = '#9b7a85';
+    ctx.font = '11px sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('100%', 4, 24);
+    ctx.fillText('50%', 8, (ch + 20) / 2);
+    ctx.fillText('0%', 10, ch);
+
+    const pts = recent.map((i, idx) => {
+      const x = pad + (cw / Math.max(recent.length - 1, 1)) * idx;
+      const acc = i.questionCount > 0 ? (i.correctCount / i.questionCount) * 100 : 0;
+      const y = ch - (acc / 100) * (ch - 25);
+      return { x, y, acc, date: i.date, section: i.section };
+    });
+
+    ctx.strokeStyle = '#98b8c8';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    pts.forEach((p, idx) => {
+      if (idx === 0) ctx.moveTo(p.x, p.y);
+      else ctx.lineTo(p.x, p.y);
+    });
+    ctx.stroke();
+
+    ctx.fillStyle = '#98b8c8';
+    pts.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    document.getElementById('civilAccuracyChart').innerHTML = '';
+    document.getElementById('civilAccuracyChart').appendChild(canvas);
+  },
+  renderList() {
+    const data = DB.getAll().civil.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('civilList').innerHTML = '<div class="empty-state">还没有考公记录，开始打卡吧～ 📝</div>';
+      return;
+    }
+    let html = '';
+    data.forEach(i => {
+      const acc = i.questionCount > 0 ? ((i.correctCount / i.questionCount) * 100).toFixed(0) + '%' : '-';
+      const emoji = CIVIL_SECTION_EMOJI[i.section] || '';
+      html += `<div class="timeline-item" style="border-left-color:${CIVIL_SECTION_COLORS[i.section] || '#d4a5a5'}">
+        <div class="timeline-date">📅 ${Util.formatDateFull(i.date)} · ${emoji} ${Util.escapeHtml(i.section)}${i.content ? ' · ' + Util.escapeHtml(i.content) : ''}</div>
+        <div class="timeline-content">
+          <p><strong>✏️ 做题：</strong>${i.questionCount} 题，✅ 正确 ${i.correctCount} 题（${acc}）${i.duration ? ' · ⏰ ' + i.duration + '分钟' : ''}${i.studyDuration ? ' · 📺 听课 ' + i.studyDuration + '分钟' : ''}</p>
+          ${i.notes ? `<p>${Util.escapeHtml(i.notes)}</p>` : ''}
+        </div>
+        <div style="text-align:right;margin-top:4px"><button class="action-btn" onclick="Modules.civil.del('${i.id}')">🗑️</button></div>
+      </div>`;
+    });
+    document.getElementById('civilList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('civil', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 英语学习 ---
+const MASTERY_LABELS = { 1: '⭐ 认识', 2: '⭐⭐ 能用', 3: '⭐⭐⭐ 熟练', 4: '⭐⭐⭐⭐ 精通' };
+const MASTERY_COLORS = { 1: '#e8d070', 2: '#e0a878', 3: '#98b8c8', 4: '#a0c0a0' };
+
+Modules.english = {
+  init() {
+    document.getElementById('englishForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      DB.add('english', {
+        date: fd.get('date'),
+        wordCount: Number(fd.get('wordCount')) || 0,
+        masteredCount: Number(fd.get('masteredCount')) || 0,
+        masteryLevel: Number(fd.get('masteryLevel')) || 1,
+        isKey: fd.get('isKey') === 'true',
+        duration: Number(fd.get('duration')) || 0,
+        wordList: fd.get('wordList') || '',
+        notes: fd.get('notes') || ''
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 单词学习记录已添加');
+      this.render();
+    });
+    document.getElementById('englishFilterMastery').addEventListener('change', () => this.renderList());
+    document.getElementById('englishFilterKey').addEventListener('change', () => this.renderList());
+  },
+  render() { this.renderStats(); this.renderChart(); this.renderList(); },
+  renderStats() {
+    const data = DB.getAll().english;
+    const last7 = Util.last7Days();
+    const recent = data.filter(i => last7.includes(i.date));
+    const totalWords = data.reduce((s, i) => s + (Number(i.wordCount)||0), 0);
+    const totalMastered = data.reduce((s, i) => s + (Number(i.masteredCount)||0), 0);
+    const recentWords = recent.reduce((s, i) => s + (Number(i.wordCount)||0), 0);
+    const recentMastered = recent.reduce((s, i) => s + (Number(i.masteredCount)||0), 0);
+    const todayWords = data.filter(i => i.date === Util.today()).reduce((s, i) => s + (Number(i.wordCount)||0), 0);
+    const keyWords = data.filter(i => i.isKey).reduce((s, i) => s + (Number(i.wordCount)||0), 0);
+    const masteryRate = totalWords > 0 ? ((totalMastered / totalWords) * 100).toFixed(1) + '%' : '-';
+
+    document.getElementById('englishStats').innerHTML = `
+      <div class="stat-item"><div class="stat-value" style="color:#98b8c8">${todayWords}</div><div class="stat-label">📖 今日单词</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:#e8d070">${recentWords}</div><div class="stat-label">📅 近7天学习</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:#a0c0a0">${totalMastered}</div><div class="stat-label">✅ 累计掌握</div></div>
+      <div class="stat-item"><div class="stat-value">${masteryRate}</div><div class="stat-label">📊 掌握率</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:#e0a878">${keyWords}</div><div class="stat-label">⭐ 重点单词</div></div>
+      <div class="stat-item"><div class="stat-value">${totalWords}</div><div class="stat-label">📊 累计学习</div></div>
+    `;
+  },
+  renderChart() {
+    const data = DB.getAll().english;
+    const days = Util.last7Days();
+    const wordVals = days.map(d => data.filter(i => i.date === d).reduce((s, i) => s + (Number(i.wordCount)||0), 0));
+    const masteredVals = days.map(d => data.filter(i => i.date === d).reduce((s, i) => s + (Number(i.masteredCount)||0), 0));
+    const max = Math.max(...wordVals, 1);
+    let html = '<div class="bar-chart">';
+    days.forEach((d, idx) => {
+      const w = wordVals[idx];
+      const m = masteredVals[idx];
+      const pct = (w / max) * 100;
+      html += `<div class="bar-row">
+        <div class="bar-label">${Util.formatDate(d)}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${Math.max(pct, 5)}%;background:linear-gradient(90deg,#98b8c8,#7898a8)">${w || ''}</div></div>
+      </div>`;
+      if (m > 0) {
+        html += `<div class="bar-row" style="margin-top:2px">
+          <div class="bar-label" style="color:#a0c0a0;font-size:11px">✅</div>
+          <div class="bar-track" style="height:16px"><div class="bar-fill" style="width:${Math.max((m/max)*100, 3)}%;background:#a0c0a0;font-size:11px;height:16px">${m}</div></div>
+        </div>`;
+      }
+    });
+    html += '</div>';
+    html += '<p style="margin-top:8px;font-size:12px;color:var(--text-secondary)">🔵 学习量 / 🟢 掌握量</p>';
+    document.getElementById('englishChart').innerHTML = html;
+  },
+  renderList() {
+    const fMastery = document.getElementById('englishFilterMastery').value;
+    const fKey = document.getElementById('englishFilterKey').value;
+    let data = DB.getAll().english;
+    if (fMastery) data = data.filter(i => String(i.masteryLevel || 1) === fMastery);
+    if (fKey === 'true') data = data.filter(i => i.isKey);
+    data.sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('englishList').innerHTML = '<div class="empty-state">还没有单词学习记录～ 🔤</div>';
+      return;
+    }
+    let html = '';
+    data.forEach(i => {
+      const mastery = MASTERY_LABELS[i.masteryLevel || 1] || '⭐ 认识';
+      const color = MASTERY_COLORS[i.masteryLevel || 1] || '#e8d070';
+      const rate = i.wordCount > 0 ? ((i.masteredCount / i.wordCount) * 100).toFixed(0) + '%' : '-';
+      const keyBadge = i.isKey ? '<span class="badge badge-keyword">⭐ 重点</span>' : '';
+      html += `<div class="timeline-item" style="border-left-color:${color}">
+        <div class="timeline-date">📅 ${Util.formatDateFull(i.date)} · 📖 ${i.wordCount} 词 · ✅ ${i.masteredCount} 词（${rate}） · ${mastery} ${keyBadge}${i.duration ? ' · ⏰ ' + i.duration + '分钟' : ''}</div>
+        <div class="timeline-content">
+          ${i.wordList ? `<p><strong>📝 单词：</strong>${Util.escapeHtml(i.wordList)}</p>` : ''}
+          ${i.notes ? `<p><strong>💡 心得：</strong>${Util.escapeHtml(i.notes)}</p>` : ''}
+        </div>
+        <div style="text-align:right;margin-top:4px"><button class="action-btn" onclick="Modules.english.del('${i.id}')">🗑️</button></div>
+      </div>`;
+    });
+    document.getElementById('englishList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('english', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 校招 ---
+Modules.campus = {
+  init() {
+    document.getElementById('campusForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      DB.add('campus', {
+        date: fd.get('date'),
+        interviewDate: fd.get('interviewDate') || '',
+        direction: fd.get('direction'),
+        candidate: fd.get('candidate'),
+        interviewer: fd.get('interviewer'),
+        round: fd.get('round'),
+        interviewStatus: fd.get('interviewStatus'),
+        interviewResult: fd.get('interviewResult'),
+        notes: fd.get('notes')
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 面试记录已添加');
+      this.render();
+    });
+    document.getElementById('campusFilterDirection').addEventListener('change', () => this.renderList());
+    document.getElementById('campusFilterStatus').addEventListener('change', () => this.renderList());
+    document.getElementById('campusFilterResult').addEventListener('change', () => this.renderList());
+  },
+  render() { this.renderStats(); this.renderList(); },
+  renderStats() {
+    const week = Util.weekRange();
+    const data = DB.getAll().campus.filter(i => i.date >= week.start && i.date <= week.end);
+    const byDir = { bsp: {total:0, passed:0, failed:0, pending:0}, multimedia: {total:0, passed:0, failed:0, pending:0}, algorithm: {total:0, passed:0, failed:0, pending:0} };
+    data.forEach(i => {
+      if (byDir[i.direction]) {
+        byDir[i.direction].total++;
+        const result = i.interviewResult || i.status || 'pending';
+        if (result === 'passed') byDir[i.direction].passed++;
+        else if (result === 'failed') byDir[i.direction].failed++;
+        else byDir[i.direction].pending++;
+      }
+    });
+    let html = '';
+    for (const [key, label] of Object.entries(DIRECTIONS)) {
+      const d = byDir[key];
+      const passRate = d.total > 0 ? ((d.passed / d.total) * 100).toFixed(0) + '%' : '-';
+      html += `<div class="stat-item">
+        <div class="stat-value" style="color:${DIRECTION_COLORS[key]}">${d.total}</div>
+        <div class="stat-label">${label}</div>
+        <div style="font-size:12px;color:var(--text-secondary);margin-top:4px">✅ ${d.passed} · ⏳ ${d.pending} · ❌ ${d.failed}<br>通过率 ${passRate}</div>
+      </div>`;
+    }
+    html += `<div class="stat-item"><div class="stat-value">${data.length}</div><div class="stat-label">📊 本周面试总数</div></div>`;
+    document.getElementById('campusStats').innerHTML = html;
+  },
+  renderList() {
+    const fDir = document.getElementById('campusFilterDirection').value;
+    const fStatus = document.getElementById('campusFilterStatus').value;
+    const fResult = document.getElementById('campusFilterResult').value;
+    let data = DB.getAll().campus;
+    if (fDir) data = data.filter(i => i.direction === fDir);
+    if (fStatus) data = data.filter(i => (i.interviewStatus || 'unscheduled') === fStatus);
+    if (fResult) data = data.filter(i => (i.interviewResult || 'pending') === fResult);
+    data.sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('campusList').innerHTML = '<div class="empty-state">暂无面试记录</div>';
+      return;
+    }
+    let html = `<table><thead><tr><th>记录日期</th><th>面试时间</th><th>方向</th><th>候选人</th><th>面试官</th><th>轮次</th><th>面试状态</th><th>面试结果</th><th>备注</th><th></th></tr></thead><tbody>`;
+    data.forEach(i => {
+      html += `<tr>
+        <td>${Util.formatDateFull(i.date)}</td>
+        <td>${i.interviewDate ? Util.formatDateTime(i.interviewDate) : '-'}</td>
+        <td><span class="badge badge-${i.direction}">${DIRECTIONS[i.direction]}</span></td>
+        <td>${Util.escapeHtml(i.candidate)}</td>
+        <td>${Util.escapeHtml(i.interviewer)}</td>
+        <td>${Util.escapeHtml(i.round)}</td>
+        <td><span class="badge badge-${i.interviewStatus || 'unscheduled'}">${INTERVIEW_STATUSES[i.interviewStatus || 'unscheduled']}</span></td>
+        <td><span class="badge badge-${i.interviewResult || 'pending'}">${STATUSES_CAMPUS[i.interviewResult || 'pending']}</span></td>
+        <td>${Util.escapeHtml(i.notes)}</td>
+        <td><button class="action-btn" onclick="Modules.campus.del('${i.id}')">🗑️</button></td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+    document.getElementById('campusList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('campus', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 实习生 ---
+Modules.intern = {
+  init() {
+    document.getElementById('internForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      DB.add('intern', {
+        date: fd.get('date'),
+        interviewDate: fd.get('interviewDate') || '',
+        position: fd.get('position'),
+        candidate: fd.get('candidate'),
+        mentor: fd.get('mentor'),
+        interviewStatus: fd.get('interviewStatus'),
+        interviewResult: fd.get('interviewResult'),
+        matchStatus: fd.get('matchStatus'),
+        notes: fd.get('notes')
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 实习生记录已添加');
+      this.render();
+    });
+    document.getElementById('internFilterPosition').addEventListener('change', () => this.renderList());
+    document.getElementById('internFilterStatus').addEventListener('change', () => this.renderList());
+    document.getElementById('internFilterResult').addEventListener('change', () => this.renderList());
+  },
+  render() { this.renderStats(); this.renderList(); },
+  renderStats() {
+    const data = DB.getAll().intern;
+    const byPos = { embedded: {total:0, pending:0, matched:0}, api: {total:0, pending:0, matched:0} };
+    data.forEach(i => {
+      if (byPos[i.position]) {
+        byPos[i.position].total++;
+        const ms = i.matchStatus || i.status || 'pending';
+        if (ms === 'pending') byPos[i.position].pending++;
+        else if (ms === 'matched') byPos[i.position].matched++;
+      }
+    });
+    let html = '';
+    for (const [key, label] of Object.entries(POSITIONS)) {
+      const d = byPos[key];
+      html += `<div class="stat-item">
+        <div class="stat-value" style="color:${key==='embedded'?'#98b8c8':'#e8d070'}">${d.total}</div>
+        <div class="stat-label">${label}</div>
+        <div style="font-size:12px;color:var(--text-secondary);margin-top:4px">✅ ${d.matched} · ⏳ ${d.pending}</div>
+      </div>`;
+    }
+    html += `<div class="stat-item"><div class="stat-value">${data.length}</div><div class="stat-label">📊 总记录数</div></div>`;
+    document.getElementById('internStats').innerHTML = html;
+  },
+  renderList() {
+    const fPos = document.getElementById('internFilterPosition').value;
+    const fStatus = document.getElementById('internFilterStatus').value;
+    const fResult = document.getElementById('internFilterResult').value;
+    let data = DB.getAll().intern;
+    if (fPos) data = data.filter(i => i.position === fPos);
+    if (fStatus) data = data.filter(i => (i.interviewStatus || 'unscheduled') === fStatus);
+    if (fResult) data = data.filter(i => (i.interviewResult || 'pending') === fResult);
+    data.sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('internList').innerHTML = '<div class="empty-state">暂无实习生记录</div>';
+      return;
+    }
+    let html = `<table><thead><tr><th>记录日期</th><th>面试时间</th><th>岗位</th><th>候选人</th><th>导师</th><th>面试状态</th><th>面试结果</th><th>匹配状态</th><th>备注</th><th></th></tr></thead><tbody>`;
+    data.forEach(i => {
+      html += `<tr>
+        <td>${Util.formatDateFull(i.date)}</td>
+        <td>${i.interviewDate ? Util.formatDateTime(i.interviewDate) : '-'}</td>
+        <td><span class="badge badge-${i.position}">${POSITIONS[i.position]}</span></td>
+        <td>${Util.escapeHtml(i.candidate)}</td>
+        <td>${Util.escapeHtml(i.mentor)}</td>
+        <td><span class="badge badge-${i.interviewStatus || 'unscheduled'}">${INTERVIEW_STATUSES[i.interviewStatus || 'unscheduled']}</span></td>
+        <td><span class="badge badge-${i.interviewResult || 'pending'}">${STATUSES_CAMPUS[i.interviewResult || 'pending']}</span></td>
+        <td><span class="badge badge-${i.matchStatus || i.status || 'pending'}">${STATUSES_INTERN[i.matchStatus || i.status || 'pending']}</span></td>
+        <td>${Util.escapeHtml(i.notes)}</td>
+        <td><button class="action-btn" onclick="Modules.intern.del('${i.id}')">🗑️</button></td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+    document.getElementById('internList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('intern', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 身体管理 ---
+Modules.body = {
+  init() {
+    document.getElementById('bodyForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const height = Number(fd.get('height')) || 0;
+      const weight = Number(fd.get('weight')) || 0;
+      DB.add('body', { date: fd.get('date'), height, weight, bmr: fd.get('bmr'), notes: fd.get('notes') });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 身体数据已记录');
+      this.render();
+    });
+  },
+  render() { this.renderChart(); this.renderList(); },
+  renderChart() {
+    const data = DB.getAll().body.slice().sort((a, b) => a.date.localeCompare(b.date));
+    if (data.length === 0) {
+      document.getElementById('bodyChart').innerHTML = '<div class="empty-state">暂无数据，快去记录吧～ ⚖️</div>';
+      return;
+    }
+    Modules.overview.renderLineChart('bodyChart', data, 'weight', '#a0c0a0', 'kg');
+  },
+  renderList() {
+    const data = DB.getAll().body.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('bodyList').innerHTML = '<div class="empty-state">暂无记录</div>';
+      return;
+    }
+    let html = `<table><thead><tr><th>日期</th><th>身高</th><th>体重</th><th>BMI</th><th>基础代谢</th><th>感受</th><th></th></tr></thead><tbody>`;
+    data.forEach(i => {
+      let bmi = '-';
+      if (i.height > 0 && i.weight > 0) {
+        bmi = (i.weight / Math.pow(i.height/100, 2)).toFixed(1);
+      }
+      html += `<tr>
+        <td>${Util.formatDateFull(i.date)}</td>
+        <td>${i.height || '-'}</td>
+        <td>${i.weight || '-'}</td>
+        <td>${bmi}</td>
+        <td>${i.bmr || '-'}</td>
+        <td>${Util.escapeHtml(i.notes)}</td>
+        <td><button class="action-btn" onclick="Modules.body.del('${i.id}')">🗑️</button></td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+    document.getElementById('bodyList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('body', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 运动打卡 ---
+Modules.fitness = {
+  init() {
+    document.getElementById('fitnessForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      DB.add('fitness', {
+        date: fd.get('date'),
+        type: fd.get('type'),
+        duration: Number(fd.get('duration')) || 0,
+        distance: Number(fd.get('distance')) || 0,
+        calories: Number(fd.get('calories')) || 0,
+        notes: fd.get('notes')
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 运动打卡成功');
+      this.render();
+    });
+  },
+  render() { this.renderStats(); this.renderList(); },
+  renderStats() {
+    const data = DB.getAll().fitness;
+    const last7 = Util.last7Days();
+    const recent = data.filter(i => last7.includes(i.date));
+    const totalMin = recent.reduce((s, i) => s + (Number(i.duration)||0), 0);
+    const totalCal = recent.reduce((s, i) => s + (Number(i.calories)||0), 0);
+    const typeMap = {};
+    data.forEach(i => { typeMap[i.type] = (typeMap[i.type] || 0) + 1; });
+    const topType = Object.entries(typeMap).sort((a,b) => b[1]-a[1])[0];
+
+    document.getElementById('fitnessStats').innerHTML = `
+      <div class="stat-item"><div class="stat-value" style="color:#e8d070">${totalMin}</div><div class="stat-label">🏃 近7天运动（分钟）</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:#c08080">${totalCal}</div><div class="stat-label">🔥 近7天消耗（kcal）</div></div>
+      <div class="stat-item"><div class="stat-value">${recent.length}</div><div class="stat-label">📅 近7天打卡次数</div></div>
+      <div class="stat-item"><div class="stat-value">${data.length}</div><div class="stat-label">📊 累计运动次数</div></div>
+      ${topType ? `<div class="stat-item"><div class="stat-value" style="font-size:18px">${topType[0]}</div><div class="stat-label">🏆 最常运动</div></div>` : ''}
+    `;
+  },
+  renderList() {
+    const data = DB.getAll().fitness.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('fitnessList').innerHTML = '<div class="empty-state">还没有运动记录，动起来吧～ 🏃</div>';
+      return;
+    }
+    let html = '';
+    data.forEach(i => {
+      html += `<div class="timeline-item" style="border-left-color:#e8d070">
+        <div class="timeline-date">📅 ${Util.formatDateFull(i.date)} · ${Util.escapeHtml(i.type)} · ⏱️ ${i.duration}分钟${i.distance ? ' · 📏 ' + i.distance + 'km' : ''}${i.calories ? ' · 🔥 ' + i.calories + 'kcal' : ''}</div>
+        <div class="timeline-content">${i.notes ? `<p>${Util.escapeHtml(i.notes)}</p>` : ''}</div>
+        <div style="text-align:right;margin-top:4px"><button class="action-btn" onclick="Modules.fitness.del('${i.id}')">🗑️</button></div>
+      </div>`;
+    });
+    document.getElementById('fitnessList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('fitness', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 饮食记录 ---
+Modules.diet = {
+  init() {
+    document.getElementById('dietForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const today = fd.get('date');
+      const existing = DB.getAll().diet.find(i => i.date === today);
+      const data = {
+        date: today,
+        food: fd.get('food') || '',
+        staple: Number(fd.get('staple')) || 0,
+        protein: Number(fd.get('protein')) || 0,
+        vegetable: Number(fd.get('vegetable')) || 0,
+        snack: Number(fd.get('snack')) || 0,
+        notes: fd.get('notes') || ''
+      };
+      data.calories = Math.round(data.staple * 3.5 + data.protein * 4 + data.vegetable * 0.3 + data.snack * 4);
+      if (existing) {
+        DB.update('diet', existing.id, data);
+        Util.showToast('✨ 今日饮食已更新');
+      } else {
+        DB.add('diet', data);
+        Util.showToast('✨ 饮食记录已添加');
+      }
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      this.render();
+    });
+    document.querySelectorAll('.water-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const amount = btn.dataset.amount;
+        const today = Util.today();
+        const existing = DB.getAll().diet.find(i => i.date === today);
+        if (amount === 'reset') {
+          if (existing) DB.update('diet', existing.id, { water: 0 });
+        } else {
+          const add = Number(amount);
+          if (existing) {
+            DB.update('diet', existing.id, { water: (existing.water || 0) + add });
+          } else {
+            DB.add('diet', { date: today, food: '', staple: 0, protein: 0, vegetable: 0, snack: 0, calories: 0, water: add, notes: '' });
+          }
+        }
+        Util.showToast(amount === 'reset' ? '💧 饮水已归零' : `💧 +${amount}ml`);
+        this.renderWaterProgress();
+        this.renderTodayStats();
+      });
+    });
+  },
+  render() { this.renderWaterProgress(); this.renderTodayStats(); this.renderList(); },
+  renderWaterProgress() {
+    const today = Util.today();
+    const record = DB.getAll().diet.find(i => i.date === today);
+    const todayWater = record ? (Number(record.water) || 0) : 0;
+    const pct = Math.min((todayWater / WATER_GOAL) * 100, 100);
+    const remaining = Math.max(WATER_GOAL - todayWater, 0);
+    const emoji = todayWater >= WATER_GOAL ? '🎉' : '💧';
+    document.getElementById('waterProgress').innerHTML = `
+      <div class="water-progress">
+        <div class="water-bar">
+          <span class="water-bottle">${emoji}</span>
+          <div class="water-bar-track"><div class="water-bar-fill" style="width:${Math.max(pct, 3)}%">${todayWater}ml</div></div>
+        </div>
+        <div class="water-info">
+          <span>目标 ${WATER_GOAL}ml</span>
+          <span>${todayWater >= WATER_GOAL ? '已达标！🎉' : '还需 ' + remaining + 'ml'}</span>
+        </div>
+      </div>
+    `;
+  },
+  renderTodayStats() {
+    const today = Util.today();
+    const record = DB.getAll().diet.find(i => i.date === today);
+    const cal = record ? (Number(record.calories) || 0) : 0;
+    const water = record ? (Number(record.water) || 0) : 0;
+    const staple = record ? (Number(record.staple) || 0) : 0;
+    const protein = record ? (Number(record.protein) || 0) : 0;
+    const vegetable = record ? (Number(record.vegetable) || 0) : 0;
+    const snack = record ? (Number(record.snack) || 0) : 0;
+    document.getElementById('dietTodayStats').innerHTML = `
+      <div class="stat-item"><div class="stat-value" style="color:#c08080">${cal}</div><div class="stat-label">🔥 今日热量（kcal）</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:#98b8c8">${water}</div><div class="stat-label">💧 今日饮水（ml）</div></div>
+      <div class="stat-item"><div class="stat-value">${staple}</div><div class="stat-label">🍚 主食（g）</div></div>
+      <div class="stat-item"><div class="stat-value">${protein}</div><div class="stat-label">🥩 蛋白质（g）</div></div>
+      <div class="stat-item"><div class="stat-value">${vegetable}</div><div class="stat-label">🥬 蔬菜（g）</div></div>
+      <div class="stat-item"><div class="stat-value">${snack}</div><div class="stat-label">🍰 零食（g）</div></div>
+    `;
+  },
+  renderList() {
+    const data = DB.getAll().diet.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('dietList').innerHTML = '<div class="empty-state">还没有饮食记录～ 🥗</div>';
+      return;
+    }
+    let html = '';
+    data.forEach(i => {
+      html += `<div class="timeline-item" style="border-left-color:#c08080">
+        <div class="timeline-date">📅 ${Util.formatDateFull(i.date)} · 🔥 ${i.calories || 0}kcal · 💧 ${i.water || 0}ml</div>
+        <div class="timeline-content">
+          ${i.food ? `<p><strong>🍜 食物：</strong>${Util.escapeHtml(i.food)}</p>` : ''}
+          <p><strong>📊 营养：</strong>🍚 ${i.staple || 0}g · 🥩 ${i.protein || 0}g · 🥬 ${i.vegetable || 0}g · 🍰 ${i.snack || 0}g</p>
+          ${i.notes ? `<p>${Util.escapeHtml(i.notes)}</p>` : ''}
+        </div>
+        <div style="text-align:right;margin-top:4px"><button class="action-btn" onclick="Modules.diet.del('${i.id}')">🗑️</button></div>
+      </div>`;
+    });
+    document.getElementById('dietList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('diet', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 今日心情 ---
+Modules.mood = {
+  init() {
+    document.getElementById('moodForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      DB.add('mood', {
+        date: fd.get('date'),
+        mood: fd.get('mood'),
+        score: Number(fd.get('score')) || 5,
+        notes: fd.get('notes')
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 心情已记录');
+      this.render();
+    });
+  },
+  render() { this.renderStats(); this.renderChart(); this.renderList(); },
+  renderStats() {
+    const data = DB.getAll().mood;
+    const last14 = Util.last14Days();
+    const recent = data.filter(i => last14.includes(i.date));
+    const avgScore = recent.length > 0 ? (recent.reduce((s, i) => s + (Number(i.score)||0), 0) / recent.length).toFixed(1) : '-';
+    const todayMood = data.find(i => i.date === Util.today());
+    const moodMap = {};
+    data.forEach(i => { if (i.mood) moodMap[i.mood] = (moodMap[i.mood] || 0) + 1; });
+    const topMood = Object.entries(moodMap).sort((a,b) => b[1]-a[1])[0];
+
+    document.getElementById('moodStats').innerHTML = `
+      ${todayMood ? `<div class="stat-item"><div class="stat-value" style="font-size:28px">${todayMood.mood}</div><div class="stat-label">💝 今日心情</div></div>` : ''}
+      <div class="stat-item"><div class="stat-value" style="color:#d4a5a5">${avgScore}</div><div class="stat-label">📊 近14天平均分</div></div>
+      <div class="stat-item"><div class="stat-value">${recent.length}</div><div class="stat-label">📝 近14天记录</div></div>
+      ${topMood ? `<div class="stat-item"><div class="stat-value" style="font-size:24px">${topMood[0]}</div><div class="stat-label">🏆 最常出现</div></div>` : ''}
+    `;
+  },
+  renderChart() {
+    const data = DB.getAll().mood.slice().sort((a, b) => a.date.localeCompare(b.date));
+    const recent = data.slice(-14);
+    if (recent.length === 0) {
+      document.getElementById('moodChart').innerHTML = '<div class="empty-state">暂无心情数据～</div>';
+      return;
+    }
+    const canvas = document.createElement('canvas');
+    const w = 380, h = 160;
+    canvas.width = w; canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    const pad = 35;
+    const cw = w - pad * 2;
+    const ch = h - pad;
+
+    ctx.strokeStyle = '#f0e0e0';
+    ctx.beginPath();
+    ctx.moveTo(pad, 20);
+    ctx.lineTo(pad, ch);
+    ctx.lineTo(w - pad, ch);
+    ctx.stroke();
+
+    ctx.fillStyle = '#9b7a85';
+    ctx.font = '11px sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('10', 8, 24);
+    ctx.fillText('5', 12, (ch + 20) / 2);
+    ctx.fillText('0', 12, ch);
+
+    const pts = recent.map((i, idx) => {
+      const x = pad + (cw / Math.max(recent.length - 1, 1)) * idx;
+      const y = ch - ((Number(i.score) || 5) / 10) * (ch - 25);
+      return { x, y, score: i.score, mood: i.mood, date: i.date };
+    });
+
+    ctx.strokeStyle = '#d4a5a5';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    pts.forEach((p, idx) => {
+      if (idx === 0) ctx.moveTo(p.x, p.y);
+      else ctx.lineTo(p.x, p.y);
+    });
+    ctx.stroke();
+
+    ctx.fillStyle = '#d4a5a5';
+    pts.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    document.getElementById('moodChart').innerHTML = '';
+    document.getElementById('moodChart').appendChild(canvas);
+  },
+  renderList() {
+    const data = DB.getAll().mood.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('moodList').innerHTML = '<div class="empty-state">还没有心情记录～ 💝</div>';
+      return;
+    }
+    let html = '';
+    data.forEach(i => {
+      html += `<div class="timeline-item">
+        <div class="timeline-date">📅 ${Util.formatDateFull(i.date)} · ${i.mood} · 评分 ${i.score}/10</div>
+        <div class="timeline-content">${i.notes ? `<p>${Util.escapeHtml(i.notes)}</p>` : ''}</div>
+        <div style="text-align:right;margin-top:4px"><button class="action-btn" onclick="Modules.mood.del('${i.id}')">🗑️</button></div>
+      </div>`;
+    });
+    document.getElementById('moodList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('mood', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 睡眠记录 ---
+Modules.sleep = {
+  init() {
+    document.getElementById('sleepForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      DB.add('sleep', {
+        date: fd.get('date'),
+        bedtime: fd.get('bedtime'),
+        wakeup: fd.get('wakeup'),
+        quality: Number(fd.get('quality')) || 3,
+        notes: fd.get('notes'),
+        dream: fd.get('dream') || ''
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 睡眠记录已添加');
+      this.render();
+    });
+  },
+  render() { this.renderStats(); this.renderChart(); this.renderList(); },
+  renderStats() {
+    const data = DB.getAll().sleep;
+    const last14 = Util.last14Days();
+    const recent = data.filter(i => last14.includes(i.date));
+    const sleepHours = recent.map(i => Util.calcSleepHours(i.bedtime, i.wakeup)).filter(h => h > 0);
+    const avgSleep = sleepHours.length > 0 ? (sleepHours.reduce((a,b)=>a+b,0) / sleepHours.length).toFixed(1) : '-';
+    const avgQuality = recent.length > 0 ? (recent.reduce((s, i) => s + (Number(i.quality)||0), 0) / recent.length).toFixed(1) : '-';
+    const todaySleep = data.find(i => i.date === Util.today());
+    const todayHours = todaySleep ? Util.calcSleepHours(todaySleep.bedtime, todaySleep.wakeup) : null;
+
+    document.getElementById('sleepStats').innerHTML = `
+      ${todayHours !== null ? `<div class="stat-item"><div class="stat-value" style="color:${todayHours>=7?'#a0c0a0':'#e8d070'}">${todayHours}h</div><div class="stat-label">😴 今早睡眠</div></div>` : ''}
+      <div class="stat-item"><div class="stat-value" style="color:#b0a0b8">${avgSleep}h</div><div class="stat-label">📊 近14天平均</div></div>
+      <div class="stat-item"><div class="stat-value">${avgQuality}</div><div class="stat-label">⭐ 平均睡眠质量</div></div>
+      <div class="stat-item"><div class="stat-value">${recent.length}</div><div class="stat-label">📝 近14天记录</div></div>
+    `;
+  },
+  renderChart() {
+    const data = DB.getAll().sleep.slice().sort((a, b) => a.date.localeCompare(b.date));
+    const recent = data.slice(-14);
+    if (recent.length === 0) {
+      document.getElementById('sleepChart').innerHTML = '<div class="empty-state">暂无睡眠数据～</div>';
+      return;
+    }
+    const canvas = document.createElement('canvas');
+    const w = 380, h = 160;
+    canvas.width = w; canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    const pad = 35;
+    const cw = w - pad * 2;
+    const ch = h - pad;
+
+    ctx.strokeStyle = '#f0e0e0';
+    ctx.beginPath();
+    ctx.moveTo(pad, 20);
+    ctx.lineTo(pad, ch);
+    ctx.lineTo(w - pad, ch);
+    ctx.stroke();
+
+    ctx.fillStyle = '#9b7a85';
+    ctx.font = '11px sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('10h', 4, 24);
+    ctx.fillText('6h', 10, (ch + 20) / 2 + 10);
+    ctx.fillText('0h', 12, ch);
+
+    const pts = recent.map((i, idx) => {
+      const x = pad + (cw / Math.max(recent.length - 1, 1)) * idx;
+      const hours = Util.calcSleepHours(i.bedtime, i.wakeup);
+      const y = ch - (hours / 10) * (ch - 25);
+      return { x, y, hours, date: i.date };
+    });
+
+    ctx.strokeStyle = '#b0a0b8';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    pts.forEach((p, idx) => {
+      if (idx === 0) ctx.moveTo(p.x, p.y);
+      else ctx.lineTo(p.x, p.y);
+    });
+    ctx.stroke();
+
+    ctx.fillStyle = '#b0a0b8';
+    pts.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    document.getElementById('sleepChart').innerHTML = '';
+    document.getElementById('sleepChart').appendChild(canvas);
+  },
+  renderList() {
+    const data = DB.getAll().sleep.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('sleepList').innerHTML = '<div class="empty-state">还没有睡眠记录～ 😴</div>';
+      return;
+    }
+    let html = '';
+    data.forEach(i => {
+      const hours = Util.calcSleepHours(i.bedtime, i.wakeup);
+      const stars = '⭐'.repeat(i.quality || 0);
+      html += `<div class="timeline-item" style="border-left-color:#b0a0b8">
+        <div class="timeline-date">📅 ${Util.formatDateFull(i.date)} · 🌙 ${i.bedtime || '?'} → ☀️ ${i.wakeup || '?'} · ${hours}h · ${stars}</div>
+        <div class="timeline-content">
+          ${i.notes ? `<p><strong>💬 睡前状态：</strong>${Util.escapeHtml(i.notes)}</p>` : ''}
+          ${i.dream ? `<p><strong>🌙 梦境：</strong>${Util.escapeHtml(i.dream)}</p>` : ''}
+        </div>
+        <div style="text-align:right;margin-top:4px"><button class="action-btn" onclick="Modules.sleep.del('${i.id}')">🗑️</button></div>
+      </div>`;
+    });
+    document.getElementById('sleepList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('sleep', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 人际管理 ---
+Modules.social = {
+  init() {
+    document.getElementById('socialForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const photoInput = e.target.querySelector('input[name="photo"]');
+      let photoData = '';
+      if (photoInput && photoInput.files[0]) {
+        photoData = await this.fileToBase64(photoInput.files[0]);
+      }
+      DB.add('social', {
+        date: fd.get('date'),
+        friend: fd.get('friend'),
+        activity: fd.get('activity'),
+        direction: fd.get('direction'),
+        notes: fd.get('notes'),
+        photo: photoData
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      const preview = e.target.querySelector('.photo-preview');
+      if (preview) preview.innerHTML = '';
+      Util.showToast('✨ 人际记录已添加');
+      this.render();
+    });
+  },
+  fileToBase64(file) {
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = e => resolve(e.target.result);
+      reader.readAsDataURL(file);
+    });
+  },
+  render() { this.renderStats(); this.renderList(); },
+  renderStats() {
+    const data = DB.getAll().social;
+    const last7 = Util.last7Days();
+    const recent = data.filter(i => last7.includes(i.date)).length;
+    const friendMap = {};
+    data.forEach(i => { friendMap[i.friend] = (friendMap[i.friend] || 0) + 1; });
+    const topFriends = Object.entries(friendMap).sort((a,b) => b[1]-a[1]).slice(0, 5);
+    const dirMap = {};
+    data.forEach(i => { if (i.direction) dirMap[i.direction] = (dirMap[i.direction] || 0) + 1; });
+    const topDirs = Object.entries(dirMap).sort((a,b) => b[1]-a[1]).slice(0, 5);
+
+    let html = `
+      <div class="stat-item"><div class="stat-value" style="color:#d4a5a5">${data.length}</div><div class="stat-label">🧺 总互动次数</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:#a0c0a0">${recent}</div><div class="stat-label">📅 近7天互动</div></div>
+      <div class="stat-item"><div class="stat-value">${Object.keys(friendMap).length}</div><div class="stat-label">👥 社交对象数</div></div>
+    `;
+    if (topFriends.length > 0) {
+      html += `<div class="stat-item" style="grid-column:span 2"><div style="font-size:14px;font-weight:600;margin-bottom:6px">🏆 高频互动 TOP5</div>`;
+      topFriends.forEach(([name, count]) => {
+        html += `<div style="font-size:13px;margin:3px 0">💝 ${Util.escapeHtml(name)}：${count} 次</div>`;
+      });
+      html += '</div>';
+    }
+    if (topDirs.length > 0) {
+      html += `<div class="stat-item" style="grid-column:span 2"><div style="font-size:14px;font-weight:600;margin-bottom:6px">🧭 社交方向</div>`;
+      topDirs.forEach(([dir, count]) => {
+        html += `<div style="font-size:13px;margin:3px 0">${Util.escapeHtml(dir)}：${count} 次</div>`;
+      });
+      html += '</div>';
+    }
+    document.getElementById('socialStats').innerHTML = html;
+  },
+  renderList() {
+    const data = DB.getAll().social.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('socialList').innerHTML = '<div class="empty-state">还没有互动记录～ 🧺</div>';
+      return;
+    }
+    let html = '';
+    data.forEach(i => {
+      html += `<div class="timeline-item">
+        <div class="timeline-date">📅 ${Util.formatDateFull(i.date)} · 👤 ${Util.escapeHtml(i.friend)}${i.activity ? ' · 🎉 ' + Util.escapeHtml(i.activity) : ''}${i.direction ? ' · 🧭 ' + Util.escapeHtml(i.direction) : ''}</div>
+        <div class="timeline-content">
+          ${i.photo ? `<p><img src="${i.photo}" style="max-width:200px;max-height:200px;border-radius:8px;margin:6px 0"></p>` : ''}
+          ${i.notes ? `<p>${Util.escapeHtml(i.notes)}</p>` : '<p style="color:var(--text-secondary)">无备注</p>'}
+        </div>
+        <div style="text-align:right;margin-top:4px"><button class="action-btn" onclick="Modules.social.del('${i.id}')">🗑️</button></div>
+      </div>`;
+    });
+    document.getElementById('socialList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('social', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 服饰搭配 ---
+Modules.outfit = {
+  init() {
+    document.getElementById('outfitForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const photoInput = e.target.querySelector('input[name="photo"]');
+      let photoData = '';
+      if (photoInput && photoInput.files[0]) {
+        photoData = await this.fileToBase64(photoInput.files[0]);
+      }
+      DB.add('outfit', {
+        date: fd.get('date'),
+        colorScheme: fd.get('colorScheme'),
+        style: fd.get('style'),
+        photo: photoData,
+        notes: fd.get('notes')
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      const preview = e.target.querySelector('.photo-preview');
+      if (preview) preview.innerHTML = '';
+      Util.showToast('✨ 穿搭记录已添加');
+      this.render();
+    });
+  },
+  fileToBase64(file) {
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = e => resolve(e.target.result);
+      reader.readAsDataURL(file);
+    });
+  },
+  render() { this.renderAdvice(); this.renderList(); },
+  renderAdvice() {
+    const data = DB.getAll().outfit;
+    const today = Util.today();
+    const todayRecord = data.find(i => i.date === today);
+    const tips = [];
+    const month = new Date().getMonth() + 1;
+    let season = '';
+    if (month >= 3 && month <= 5) season = '春季';
+    else if (month >= 6 && month <= 8) season = '夏季';
+    else if (month >= 9 && month <= 11) season = '秋季';
+    else season = '冬季';
+    const seasonTips = {
+      '春季': '🌸 春季温差大，建议洋葱式穿搭，内搭+外套方便穿脱，色系推荐莫兰迪或大地色。',
+      '夏季': '☀️ 夏季炎热，选择透气棉麻材质，浅色系更凉爽，注意防晒可带一件薄外套。',
+      '秋季': '🍂 秋季适合叠穿，针织衫+风衣+围巾是经典组合，暖色系和大地色很配秋天。',
+      '冬季': '❄️ 冬季保暖为主，内层贴身保暖+中层毛衣+外层防风外套，注意护住脖子和脚踝。'
+    };
+    tips.push(seasonTips[season]);
+    fetch('https://wttr.in/Shenzhen?format=j1&lang=zh')
+      .then(r => r.json())
+      .then(w => {
+        const cur = w.current_condition[0];
+        const temp = Number(cur.temp_C);
+        const desc = cur.lang_zh[0].value;
+        if (temp >= 28) {
+          tips.push('🌡️ 当前 ' + temp + '°C，天气炎热：短袖/裙装，浅色系，透气材质，带防晒衣。');
+        } else if (temp >= 20) {
+          tips.push('🌡️ 当前 ' + temp + '°C，温度舒适：薄长袖/T恤+薄外套，牛仔裤或裙装均可。');
+        } else if (temp >= 12) {
+          tips.push('🌡️ 当前 ' + temp + '°C，微凉：针织衫/卫衣+外套，长裤，可加围巾。');
+        } else {
+          tips.push('🌡️ 当前 ' + temp + '°C，偏冷：毛衣+厚外套+长裤，注意保暖。');
+        }
+        if (desc.includes('雨')) tips.push('🌧️ 今天有雨：穿防水鞋，带伞，避免浅色裤脚，选深色系更耐脏。');
+        if (desc.includes('阴') || desc.includes('云')) tips.push('☁️ 今天阴天：可以穿亮色系提亮整体气色，莫兰迪色也很适合。');
+        if (desc.includes('晴')) tips.push('☀️ 今天晴天：适合明亮色系，注意防晒，可戴帽子或墨镜。');
+        this.renderAdviceHtml(tips, todayRecord);
+      })
+      .catch(() => { this.renderAdviceHtml(tips, todayRecord); });
+  },
+  renderAdviceHtml(tips, todayRecord) {
+    if (todayRecord) {
+      tips.push('📸 你今天记录了「' + (todayRecord.colorScheme || '') + ' ' + (todayRecord.style || '') + '」风格，搭配不错哦！');
+    } else {
+      tips.push('💡 今天还没记录穿搭，拍一张上传吧～');
+    }
+    let html = '';
+    tips.forEach(t => { html += '<div class="advice-item">' + t + '</div>'; });
+    document.getElementById('outfitAdvice').innerHTML = html;
+  },
+  renderList() {
+    const data = DB.getAll().outfit.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('outfitList').innerHTML = '<div class="empty-state" style="grid-column:1/-1">还没有穿搭记录～ 👗</div>';
+      return;
+    }
+    let html = '';
+    data.forEach(i => {
+      html += `<div class="gallery-item">
+        ${i.photo ? `<img src="${i.photo}">` : '<div style="height:160px;display:flex;align-items:center;justify-content:center;background:#f5f0f0;border-radius:8px;margin-bottom:8px;font-size:36px">👗</div>'}
+        <div class="gallery-date">📅 ${Util.formatDateFull(i.date)}</div>
+        <div class="gallery-info">${i.colorScheme || ''} · ${i.style || ''}</div>
+        ${i.notes ? `<div class="gallery-notes">${Util.escapeHtml(i.notes)}</div>` : ''}
+        <div style="text-align:right;margin-top:4px"><button class="action-btn" onclick="Modules.outfit.del('${i.id}')">🗑️</button></div>
+      </div>`;
+    });
+    document.getElementById('outfitList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('outfit', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 收支管理 ---
+Modules.finance = {
+  init() {
+    document.getElementById('financeForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      DB.add('finance', {
+        date: fd.get('date'),
+        type: fd.get('type'),
+        category: fd.get('category'),
+        amount: Number(fd.get('amount')) || 0,
+        notes: fd.get('notes')
+      });
+      e.target.reset();
+      e.target.querySelector('[name="date"]').value = Util.today();
+      Util.showToast('✨ 收支记录已添加');
+      this.render();
+    });
+  },
+  render() { this.renderMonthStats(); this.renderCategoryChart(); this.renderAdvice(); this.renderList(); },
+  renderMonthStats() {
+    const now = new Date();
+    const ym = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+    const data = DB.getAll().finance.filter(i => i.date.startsWith(ym));
+    const income = data.filter(i => i.type === 'income').reduce((s, i) => s + (Number(i.amount)||0), 0);
+    const expense = data.filter(i => i.type === 'expense').reduce((s, i) => s + (Number(i.amount)||0), 0);
+    const balance = income - expense;
+    const savingsRate = income > 0 ? ((balance / income) * 100).toFixed(1) + '%' : '-';
+    document.getElementById('financeMonthStats').innerHTML = `
+      <div class="stat-item"><div class="stat-value" style="color:#a0c0a0">${income.toFixed(2)}</div><div class="stat-label">💰 本月收入</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:#d08880">${expense.toFixed(2)}</div><div class="stat-label">💸 本月支出</div></div>
+      <div class="stat-item"><div class="stat-value" style="color:${balance >= 0 ? '#a0c0a0' : '#d08880'}">${balance.toFixed(2)}</div><div class="stat-label">📊 本月结余</div></div>
+      <div class="stat-item"><div class="stat-value">${savingsRate}</div><div class="stat-label">🐷 储蓄率</div></div>
+      <div class="stat-item"><div class="stat-value">${data.length}</div><div class="stat-label">📝 本月记录数</div></div>
+    `;
+  },
+  renderCategoryChart() {
+    const now = new Date();
+    const ym = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+    const data = DB.getAll().finance.filter(i => i.date.startsWith(ym) && i.type === 'expense');
+    const catMap = {};
+    data.forEach(i => { catMap[i.category] = (catMap[i.category] || 0) + (Number(i.amount)||0); });
+    const entries = Object.entries(catMap).sort((a,b) => b[1]-a[1]);
+    if (entries.length === 0) {
+      document.getElementById('financeCategoryChart').innerHTML = '<div class="empty-state">本月暂无支出数据</div>';
+      return;
+    }
+    const max = Math.max(...entries.map(e => e[1]), 1);
+    const colors = ['#d4a5a5','#98b8c8','#a0c0a0','#e8d070','#b0a0b8','#e0a878','#d08880','#88a8b8','#c0a0c0','#a0b8a0','#c8b890','#d0a0a0'];
+    let html = '<div class="bar-chart">';
+    entries.forEach((e, idx) => {
+      const pct = (e[1] / max) * 100;
+      html += `<div class="bar-row">
+        <div class="bar-label" style="min-width:70px">${e[0]}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${Math.max(pct, 5)}%;background:${colors[idx % colors.length]}">${e[1].toFixed(0)}元</div></div>
+      </div>`;
+    });
+    html += '</div>';
+    const total = entries.reduce((s, e) => s + e[1], 0);
+    html += `<p style="margin-top:8px;font-size:12px;color:var(--text-secondary)">本月总支出 ${total.toFixed(2)} 元</p>`;
+    document.getElementById('financeCategoryChart').innerHTML = html;
+  },
+  renderAdvice() {
+    const now = new Date();
+    const ym = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+    const data = DB.getAll().finance.filter(i => i.date.startsWith(ym));
+    const income = data.filter(i => i.type === 'income').reduce((s, i) => s + (Number(i.amount)||0), 0);
+    const expense = data.filter(i => i.type === 'expense').reduce((s, i) => s + (Number(i.amount)||0), 0);
+    const balance = income - expense;
+    const catMap = {};
+    data.filter(i => i.type === 'expense').forEach(i => { catMap[i.category] = (catMap[i.category] || 0) + (Number(i.amount)||0); });
+    const topCat = Object.entries(catMap).sort((a,b) => b[1]-a[1])[0];
+    const tips = [];
+    if (income === 0 && expense > 0) {
+      tips.push('⚠️ 本月暂无收入记录，注意控制支出哦。');
+    }
+    if (balance < 0) {
+      tips.push('⚠️ 本月入不敷出，支出超过收入了，需要节流。');
+    } else if (balance > 0 && income > 0) {
+      const rate = ((balance / income) * 100).toFixed(0);
+      if (Number(rate) >= 30) {
+        tips.push(`🎉 储蓄率 ${rate}%，很棒！建议将结余的一部分用于应急基金（3-6个月生活费）。`);
+      } else {
+        tips.push(`📊 储蓄率 ${rate}%，可以尝试提高到 30% 以上，先储蓄后消费。`);
+      }
+    }
+    if (topCat) {
+      const pct = income > 0 ? ((topCat[1] / income) * 100).toFixed(0) : '∞';
+      if (Number(pct) > 40) {
+        tips.push(`📊 ${topCat[0]} 占比较高（${pct}%），可以关注一下这个分类的支出是否合理。`);
+      } else {
+        tips.push(`📊 最大支出项是 ${topCat[0]}（${topCat[1].toFixed(0)}元），占比 ${pct}%，整体合理。`);
+      }
+    }
+    tips.push('💡 建议：每月固定一笔应急储蓄，剩余按 50% 必需、30% 想要、20% 储蓄分配。');
+    let html = '';
+    tips.forEach(t => { html += `<div class="advice-item">${t}</div>`; });
+    document.getElementById('financeAdvice').innerHTML = html;
+  },
+  renderList() {
+    const data = DB.getAll().finance.slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (data.length === 0) {
+      document.getElementById('financeList').innerHTML = '<div class="empty-state">暂无收支记录</div>';
+      return;
+    }
+    let html = `<table><thead><tr><th>日期</th><th>类型</th><th>分类</th><th>金额</th><th>备注</th><th></th></tr></thead><tbody>`;
+    data.forEach(i => {
+      const typeBadge = i.type === 'income' ? '<span class="badge badge-matched">💰 收入</span>' : '<span class="badge badge-pending">💸 支出</span>';
+      html += `<tr>
+        <td>${Util.formatDateFull(i.date)}</td>
+        <td>${typeBadge}</td>
+        <td>${Util.escapeHtml(i.category)}</td>
+        <td style="font-weight:600;color:${i.type === 'income' ? '#a0c0a0' : '#d08880'}">${i.type === 'income' ? '+' : '-'}${(Number(i.amount)||0).toFixed(2)}</td>
+        <td>${Util.escapeHtml(i.notes)}</td>
+        <td><button class="action-btn" onclick="Modules.finance.del('${i.id}')">🗑️</button></td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+    document.getElementById('financeList').innerHTML = html;
+  },
+  del(id) { if (confirm('确认删除？')) { DB.remove('finance', id); this.render(); Util.showToast('已删除'); } }
+};
+
+// --- 数据备份中心 ---
+Modules.backup = {
+  init() {
+    document.getElementById('backupJsonBtn').addEventListener('click', () => this.exportJson());
+    document.getElementById('backupCsvBtn').addEventListener('click', () => this.exportCsv());
+    document.getElementById('backupOfflineBtn').addEventListener('click', () => this.downloadOffline());
+    document.getElementById('backupImportBtn').addEventListener('click', () => {
+      document.getElementById('importModal').style.display = 'flex';
+    });
+    document.getElementById('restoreFileInput').addEventListener('change', e => this.restoreFromFile(e));
+  },
+  render() { this.renderStats(); this.renderReminder(); },
+  renderStats() {
+    const data = DB.getAll();
+    const sections = Object.keys(data);
+    let total = 0;
+    let html = '';
+    sections.forEach(s => {
+      const count = data[s] ? data[s].length : 0;
+      total += count;
+      if (count > 0) {
+        const labels = {
+          campus: '🎓 校招', intern: '🧸 实习生', thesis: '📖 论文', civil: '📝 考公',
+          english: '🔤 英语', body: '⚖️ 身体', fitness: '🏃 运动', diet: '🥗 饮食',
+          mood: '💝 心情', sleep: '😴 睡眠', social: '🧺 人际', outfit: '👗 服饰',
+          finance: '💰 收支', todos: '📋 待办'
+        };
+        html += `<div class="stat-item"><div class="stat-value">${count}</div><div class="stat-label">${labels[s] || s}</div></div>`;
+      }
+    });
+    html = `<div class="stat-item"><div class="stat-value" style="color:var(--primary-dark)">${total}</div><div class="stat-label">📊 总记录数</div></div>` + html;
+    document.getElementById('backupStats').innerHTML = html;
+  },
+  renderReminder() {
+    const raw = localStorage.getItem(DB.KEY);
+    let lastBackup = localStorage.getItem('lastBackupDate');
+    const tips = [];
+    if (!lastBackup) {
+      tips.push('⚠️ 你还没有进行过备份，建议立即导出一份 JSON 备份。');
+    } else {
+      const days = Math.floor((Date.now() - new Date(lastBackup).getTime()) / (1000*60*60*24));
+      if (days >= 7) {
+        tips.push(`⚠️ 距上次备份已 ${days} 天，建议再次备份。`);
+      } else {
+        tips.push(`✅ 上次备份：${days} 天前，数据较安全。`);
+      }
+    }
+    const dataSize = raw ? (raw.length / 1024).toFixed(1) : 0;
+    tips.push(`📊 当前数据大小：${dataSize} KB`);
+    tips.push('💡 建议：每周至少备份一次，重要数据变更后立即备份。');
+    tips.push('💾 离线版网页包含完整功能，下载后可断网使用，数据同样存在本地。');
+    let html = '';
+    tips.forEach(t => { html += `<div class="advice-item">${t}</div>`; });
+    document.getElementById('backupReminder').innerHTML = html;
+  },
+  exportJson() {
+    const json = DB.export();
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `啦啦的小世界_备份_${Util.today()}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    localStorage.setItem('lastBackupDate', new Date().toISOString());
+    Util.showToast('📥 JSON 备份已下载');
+    this.renderReminder();
+  },
+  exportCsv() {
+    const data = DB.getAll();
+    const labels = {
+      campus: '校招', intern: '实习生', thesis: '论文', civil: '考公',
+      english: '英语', body: '身体', fitness: '运动', diet: '饮食',
+      mood: '心情', sleep: '睡眠', social: '人际', outfit: '服饰',
+      finance: '收支', todos: '待办'
+    };
+    let csv = '\uFEFF模块,日期,内容摘要,详情\n';
+    Object.keys(data).forEach(section => {
+      data[section].forEach(item => {
+        const date = item.date || '';
+        let summary = '';
+        if (item.candidate) summary = item.candidate;
+        else if (item.friend) summary = item.friend;
+        else if (item.section) summary = item.section;
+        else if (item.wordCount !== undefined) summary = item.wordCount + '词';
+        else if (item.readingCount !== undefined) summary = item.readingCount + '篇';
+        else if (item.weight) summary = item.weight + 'kg';
+        else if (item.type) summary = item.type;
+        else if (item.amount !== undefined) summary = item.amount + '元';
+        else if (item.text) summary = item.text;
+        const detail = JSON.stringify(item).replace(/,/g, ';').replace(/\n/g, ' ');
+        csv += `${labels[section] || section},${date},${summary},${detail}\n`;
+      });
+    });
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `啦啦的小世界_明细_${Util.today()}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+    localStorage.setItem('lastBackupDate', new Date().toISOString());
+    Util.showToast('📊 CSV 明细已下载');
+    this.renderReminder();
+  },
+  downloadOffline() {
+    const data = DB.export();
+    const html = document.documentElement.outerHTML;
+    // 在离线版本中注入当前数据
+    const offlineHtml = html.replace(
+      '<\/script>',
+      `\n// 自动注入的备份数据\ntry { const _backup = ${JSON.stringify(data)}; if (typeof DB !== 'undefined' && !localStorage.getItem(DB.KEY)) { DB.data = _backup.data || _backup; DB.save(); } } catch(e) {}\n<\/script>`
+    );
+    const blob = new Blob([offlineHtml], { type: 'text/html;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `啦啦的小世界_离线版_${Util.today()}.html`;
+    a.click();
+    URL.revokeObjectURL(url);
+    localStorage.setItem('lastBackupDate', new Date().toISOString());
+    Util.showToast('💾 离线版网页已下载');
+    this.renderReminder();
+  },
+  restoreFromFile(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      try {
+        if (DB.import(ev.target.result)) {
+          Util.showToast('✅ 数据恢复成功');
+          Modules.overview.render();
+          Nav.switchTo('overview');
+        } else {
+          Util.showToast('❌ 文件格式错误');
+        }
+      } catch(err) {
+        Util.showToast('❌ JSON 解析失败');
+      }
+    };
+    reader.readAsText(file);
+  }
+};
+
+// ===== 数据导入导出 =====
+function initDataActions() {
+  // 待办添加
+  document.getElementById('todoAddBtn').addEventListener('click', () => {
+    const input = document.getElementById('todoInput');
+    const text = input.value.trim();
+    if (text) {
+      Modules.overview.addTodo(text);
+      input.value = '';
+    }
+  });
+  document.getElementById('todoInput').addEventListener('keypress', e => {
+    if (e.key === 'Enter') {
+      const text = e.target.value.trim();
+      if (text) {
+        Modules.overview.addTodo(text);
+        e.target.value = '';
+      }
+    }
+  });
+
+  // 文件上传预览
+  document.querySelectorAll('input[type="file"][name="photo"]').forEach(input => {
+    input.addEventListener('change', e => {
+      const file = e.target.files[0];
+      const previewId = input.id || '';
+      const preview = input.parentElement.querySelector('.photo-preview');
+      if (!preview) return;
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = ev => { preview.innerHTML = `<img src="${ev.target.result}">`; };
+        reader.readAsDataURL(file);
+      } else {
+        preview.innerHTML = '';
+      }
+    });
+  });
+
+  document.getElementById('exportBtn').addEventListener('click', () => {
+    const json = DB.export();
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `dashboard_backup_${Util.today()}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    Util.showToast('📤 数据已导出');
+  });
+
+  document.getElementById('importBtn').addEventListener('click', () => {
+    document.getElementById('importModal').style.display = 'flex';
+  });
+  document.getElementById('importCancel').addEventListener('click', () => {
+    document.getElementById('importModal').style.display = 'none';
+  });
+  document.getElementById('importConfirm').addEventListener('click', () => {
+    const text = document.getElementById('importTextarea').value.trim();
+    if (!text) { Util.showToast('请粘贴数据'); return; }
+    try {
+      if (DB.import(text)) {
+        document.getElementById('importModal').style.display = 'none';
+        document.getElementById('importTextarea').value = '';
+        Util.showToast('✅ 数据导入成功');
+        Modules.overview.render();
+        Nav.switchTo('overview');
+      } else {
+        Util.showToast('❌ 数据格式错误');
+      }
+    } catch(e) {
+      Util.showToast('❌ JSON解析失败');
+    }
+  });
+
+  document.getElementById('clearBtn').addEventListener('click', () => {
+    if (confirm('⚠️ 确认清空所有数据？此操作不可撤销！建议先导出备份。')) {
+      DB.clear();
+      Util.showToast('所有数据已清空');
+      Modules.overview.render();
+      Nav.switchTo('overview');
+    }
+  });
+}
+
+// ===== 初始化 =====
+function setDefaultDates() {
+  document.querySelectorAll('input[type="date"]').forEach(input => {
+    if (!input.value) input.value = Util.today();
+  });
+}
+
+function init() {
+  DB.init();
+  Nav.init();
+  Object.keys(Modules).forEach(key => {
+    if (Modules[key].init) Modules[key].init();
+  });
+  initDataActions();
+  setDefaultDates();
+  Modules.overview.render();
+}
+
+document.addEventListener('DOMContentLoaded', init);
+
+</script>
+</body>
+</html>
